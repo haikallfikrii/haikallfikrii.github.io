@@ -1,76 +1,1619 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Animated Portfolio Fikri Haikal</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <header class="header">
-      <a href="#" class="logo">Portfolio</a>
+<html lang="en" dir="ltr" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Muhamad Fikri Haikal — Full-Stack Developer &amp; AI Automation Engineer</title>
+<meta name="description" content="Full-stack developer and AI automation engineer building multi-tenant SaaS, agentic workflows, and production systems for teams across Germany, the USA, and Malaysia.">
+<meta name="author" content="Muhamad Fikri Haikal">
+<meta name="theme-color" content="#06080d">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Muhamad Fikri Haikal — Full-Stack Developer &amp; AI Automation Engineer">
+<meta property="og:description" content="Full-stack developer and AI automation engineer building multi-tenant SaaS, agentic workflows, and production systems for teams across Germany, the USA, and Malaysia.">
+<meta property="og:image" content="assets/img/photo.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/liquid-glass.css?v=20260911h">
+<link rel="stylesheet" href="assets/css/styles.css?v=20260911h">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%23ff9f45'/><text x='16' y='22' font-family='sans-serif' font-size='16' font-weight='700' fill='%2306080d' text-anchor='middle'>F</text></svg>">
+<script>
+  // Applied before first paint so the theme never flashes.
+  try {
+    var st = localStorage.getItem('fh-theme');
+    document.documentElement.dataset.theme =
+      st || (matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+  } catch (e) {}
+</script>
+</head>
+<body id="top">
 
-      <nav class="navbar">
-        <a href="#" style="--i: 1" class="active">Home</a>
-        <a href="#" style="--i: 2">About</a>
-        <a href="#" style="--i: 3">skill</a>
-        <a href="#" style="--i: 4">Portfolio</a>
-        <a href="#" style="--i: 5">Contact</a>
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- Refraction filters. Two strengths: panels bend more than controls. -->
+<svg class="lg-svg" aria-hidden="true" focusable="false">
+  <defs>
+    <filter id="lg-refract" x="0%" y="0%" width="100%" height="100%" color-interpolation-filters="sRGB">
+      <feImage href="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22400%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22x%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%220%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23000%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23f00%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22y%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%220%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23000%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%230f0%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%20%20%3Cfilter%20id%3D%22soft%22%20x%3D%22-25%25%22%20y%3D%22-25%25%22%20width%3D%22150%25%22%20height%3D%22150%25%22%3E%0A%20%20%20%20%20%20%3CfeGaussianBlur%20stdDeviation%3D%2226%22%2F%3E%0A%20%20%20%20%3C%2Ffilter%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22%23808080%22%2F%3E%0A%20%20%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22url%28%23x%29%22%20style%3D%22mix-blend-mode%3Ascreen%22%2F%3E%0A%20%20%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22url%28%23y%29%22%20style%3D%22mix-blend-mode%3Ascreen%22%2F%3E%0A%20%20%3Crect%20x%3D%2226%22%20y%3D%2226%22%20width%3D%22348%22%20height%3D%22348%22%20rx%3D%2288%22%20fill%3D%22%23808080%22%20filter%3D%22url%28%23soft%29%22%2F%3E%0A%3C%2Fsvg%3E" xlink:href="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22400%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22x%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%220%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23000%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23f00%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22y%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%220%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23000%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%230f0%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%20%20%3Cfilter%20id%3D%22soft%22%20x%3D%22-25%25%22%20y%3D%22-25%25%22%20width%3D%22150%25%22%20height%3D%22150%25%22%3E%0A%20%20%20%20%20%20%3CfeGaussianBlur%20stdDeviation%3D%2226%22%2F%3E%0A%20%20%20%20%3C%2Ffilter%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22%23808080%22%2F%3E%0A%20%20%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22url%28%23x%29%22%20style%3D%22mix-blend-mode%3Ascreen%22%2F%3E%0A%20%20%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22url%28%23y%29%22%20style%3D%22mix-blend-mode%3Ascreen%22%2F%3E%0A%20%20%3Crect%20x%3D%2226%22%20y%3D%2226%22%20width%3D%22348%22%20height%3D%22348%22%20rx%3D%2288%22%20fill%3D%22%23808080%22%20filter%3D%22url%28%23soft%29%22%2F%3E%0A%3C%2Fsvg%3E" result="map" preserveAspectRatio="none" x="0" y="0" width="100%" height="100%"/>
+      <!-- Three passes at slightly different strengths, each isolated to one
+           channel, recombine into chromatic aberration at the rim. -->
+      <feDisplacementMap in="SourceGraphic" in2="map" scale="-82" xChannelSelector="R" yChannelSelector="G" result="dR"/>
+      <feColorMatrix in="dR" type="matrix" values="1 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 1 0" result="cR"/>
+      <feDisplacementMap in="SourceGraphic" in2="map" scale="-70" xChannelSelector="R" yChannelSelector="G" result="dG"/>
+      <feColorMatrix in="dG" type="matrix" values="0 0 0 0 0  0 1 0 0 0  0 0 0 0 0  0 0 0 1 0" result="cG"/>
+      <feDisplacementMap in="SourceGraphic" in2="map" scale="-58" xChannelSelector="R" yChannelSelector="G" result="dB"/>
+      <feColorMatrix in="dB" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 1 0 0  0 0 0 1 0" result="cB"/>
+      <feBlend in="cR" in2="cG" mode="screen" result="cRG"/>
+      <feBlend in="cRG" in2="cB" mode="screen" result="cRGB"/>
+      <feGaussianBlur in="cRGB" stdDeviation="0.32"/>
+    </filter>
+
+    <filter id="lg-refract-deep" x="0%" y="0%" width="100%" height="100%" color-interpolation-filters="sRGB">
+      <feImage href="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22400%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22x%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%220%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23000%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23f00%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22y%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%220%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23000%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%230f0%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%20%20%3Cfilter%20id%3D%22soft%22%20x%3D%22-25%25%22%20y%3D%22-25%25%22%20width%3D%22150%25%22%20height%3D%22150%25%22%3E%0A%20%20%20%20%20%20%3CfeGaussianBlur%20stdDeviation%3D%2226%22%2F%3E%0A%20%20%20%20%3C%2Ffilter%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22%23808080%22%2F%3E%0A%20%20%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22url%28%23x%29%22%20style%3D%22mix-blend-mode%3Ascreen%22%2F%3E%0A%20%20%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22url%28%23y%29%22%20style%3D%22mix-blend-mode%3Ascreen%22%2F%3E%0A%20%20%3Crect%20x%3D%2226%22%20y%3D%2226%22%20width%3D%22348%22%20height%3D%22348%22%20rx%3D%2288%22%20fill%3D%22%23808080%22%20filter%3D%22url%28%23soft%29%22%2F%3E%0A%3C%2Fsvg%3E" xlink:href="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22400%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22x%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%220%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23000%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23f00%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22y%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%220%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23000%22%2F%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%230f0%22%2F%3E%0A%20%20%20%20%3C%2FlinearGradient%3E%0A%20%20%20%20%3Cfilter%20id%3D%22soft%22%20x%3D%22-25%25%22%20y%3D%22-25%25%22%20width%3D%22150%25%22%20height%3D%22150%25%22%3E%0A%20%20%20%20%20%20%3CfeGaussianBlur%20stdDeviation%3D%2226%22%2F%3E%0A%20%20%20%20%3C%2Ffilter%3E%0A%20%20%3C%2Fdefs%3E%0A%20%20%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22%23808080%22%2F%3E%0A%20%20%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22url%28%23x%29%22%20style%3D%22mix-blend-mode%3Ascreen%22%2F%3E%0A%20%20%3Crect%20width%3D%22400%22%20height%3D%22400%22%20fill%3D%22url%28%23y%29%22%20style%3D%22mix-blend-mode%3Ascreen%22%2F%3E%0A%20%20%3Crect%20x%3D%2226%22%20y%3D%2226%22%20width%3D%22348%22%20height%3D%22348%22%20rx%3D%2288%22%20fill%3D%22%23808080%22%20filter%3D%22url%28%23soft%29%22%2F%3E%0A%3C%2Fsvg%3E" result="m" preserveAspectRatio="none" x="0" y="0" width="100%" height="100%"/>
+      <feDisplacementMap in="SourceGraphic" in2="m" scale="-150" xChannelSelector="R" yChannelSelector="G" result="pR"/>
+      <feColorMatrix in="pR" type="matrix" values="1 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 1 0" result="qR"/>
+      <feDisplacementMap in="SourceGraphic" in2="m" scale="-132" xChannelSelector="R" yChannelSelector="G" result="pG"/>
+      <feColorMatrix in="pG" type="matrix" values="0 0 0 0 0  0 1 0 0 0  0 0 0 0 0  0 0 0 1 0" result="qG"/>
+      <feDisplacementMap in="SourceGraphic" in2="m" scale="-114" xChannelSelector="R" yChannelSelector="G" result="pB"/>
+      <feColorMatrix in="pB" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 1 0 0  0 0 0 1 0" result="qB"/>
+      <feBlend in="qR" in2="qG" mode="screen" result="qRG"/>
+      <feBlend in="qRG" in2="qB" mode="screen" result="qRGB"/>
+      <feGaussianBlur in="qRGB" stdDeviation="0.5"/>
+    </filter>
+  </defs>
+</svg>
+
+<div class="atmos" aria-hidden="true">
+  <div class="atmos__blob"></div>
+  <div class="atmos__blob"></div>
+  <div class="atmos__blob"></div>
+  <div class="atmos__grid"></div>
+  <div class="atmos__grain"></div>
+</div>
+
+<!-- ============================================================== navbar -->
+<header class="nav" id="nav">
+  <div class="nav__bar lg lg--elastic lg--deep" data-elastic="0.06">
+    <span class="lg-refract"></span>
+    <span class="lg-hl"></span>
+    <div class="lg-in nav__row">
+      <a class="nav__brand" href="#top">
+        <span class="nav__mark" aria-hidden="true">FH</span>
+        <span>Fikri Haikal</span>
+      </a>
+
+      <nav class="nav__links" aria-label="Sections">
+        <span class="nav__pin" id="navPin" aria-hidden="true"></span>
+        <a class="nav__link" href="#about"    data-i18n="nav.about">About</a>
+        <a class="nav__link" href="#work"     data-i18n="nav.work">Experience</a>
+        <a class="nav__link" href="#projects" data-i18n="nav.projects">Work</a>
+        <a class="nav__link" href="#skills"   data-i18n="nav.skills">Stack</a>
+        <a class="nav__link" href="#certs"    data-i18n="nav.certs">Credentials</a>
+        <a class="nav__link" href="#contact"  data-i18n="nav.contact">Contact</a>
       </nav>
-    </header>
 
-    <section class="home">
-      <div class="home-content">
-        <h3>Hello, It is Me</h3>
-        <h1>Fikri Haikal</h1>
-        <h3>And I'm a <span class="multiple-text">Frontend Developer</span></h3>
-        <p>
-          An experienced Web Developer with expertise in HTML, CSS, Javascript,
-          PHP, React.js, and Node.js. I also specialize in using WordPress CMS
-          to create high-quality websites while keeping costs low.
-        </p>
-        <div class="social-media">
-          <a
-            href="https://www.facebook.com/mfikri.haikal.9638?mibextid=ZbWKwL"
-            style="--i: 7"
-            ><i class="bx bxl-facebook"></i
-          ></a>
-          <a
-            href="https://www.instagram.com/haikal.fikri10?igsh=cjRqd3ljN3h2cWE1"
-            style="--i: 8"
-            ><i class="bx bxl-instagram-alt"></i
-          ></a>
-          <a
-            href="https://www.linkedin.com/in/muhamad-fikri-haikal-0127aa2a5?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-            style="--i: 9"
-            ><i class="bx bxl-linkedin"></i
-          ></a>
-          <a href="https://github.com/haikallfikrii" style="--i: 10"
-            ><i class="bx bxl-github"></i
-          ></a>
+      <div class="nav__actions">
+        <div class="lang" id="lang">
+          <button class="lg lg-btn lg-btn--sm" id="langBtn" type="button"
+                  aria-haspopup="listbox" aria-expanded="false"
+                  aria-label="Change language" data-i18n-attr="aria-label:ui.lang">
+            <svg class="ico" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3.5 5.5h8M7.5 5.5v-2M9.6 5.5c0 4-2.6 7.2-6.1 8.4M5 9.2c1 2.4 3.1 4.2 5.6 4.8M13 20.5l3.8-9.6 3.7 9.6M14.4 17.4h4.8"/></svg>            <span id="langLabel">EN</span>
+            <svg class="ico" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9.5 6 6 6-6"/></svg>          </button>
+          <div class="lang__menu lg" id="langMenu" role="listbox">
+            <div class="lg-in">
+                            <button class="lang__opt is-active" type="button"
+                      role="option" aria-selected="true"
+                      data-lang="en">
+                <span class="lang__tag">EN</span>
+                <span>English</span>
+              </button>
+                            <button class="lang__opt" type="button"
+                      role="option" aria-selected="false"
+                      data-lang="id">
+                <span class="lang__tag">ID</span>
+                <span>Indonesia</span>
+              </button>
+                            <button class="lang__opt" type="button"
+                      role="option" aria-selected="false"
+                      data-lang="ja">
+                <span class="lang__tag">JA</span>
+                <span>日本語</span>
+              </button>
+                            <button class="lang__opt" type="button"
+                      role="option" aria-selected="false"
+                      data-lang="ar">
+                <span class="lang__tag">AR</span>
+                <span>العربية</span>
+              </button>
+                            <button class="lang__opt" type="button"
+                      role="option" aria-selected="false"
+                      data-lang="de">
+                <span class="lang__tag">DE</span>
+                <span>Deutsch</span>
+              </button>
+                          </div>
+          </div>
         </div>
-        <a
-          href="https://docs.google.com/document/d/1KlTj7xrZ29euBpPDhQtKAx0iJ8OiM1k8/edit?usp=drive_link&ouid=111712267882261410264&rtpof=true&sd=true"
-          class="btn"
-          >Download CV</a
-        >
+
+        <button class="lg lg-btn lg-btn--icon" id="themeBtn" type="button"
+                aria-label="Switch theme" data-i18n-attr="aria-label:ui.theme">
+          <span class="theme__icons">
+            <svg class="ico ico--sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4.25"/><path d="M12 2.5v2.2M12 19.3v2.2M4.6 4.6l1.6 1.6M17.8 17.8l1.6 1.6M2.5 12h2.2M19.3 12h2.2M4.6 19.4l1.6-1.6M17.8 6.2l1.6-1.6"/></svg>            <svg class="ico ico--moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20.5 14.2A8.6 8.6 0 0 1 9.8 3.5a7.1 7.1 0 1 0 10.7 10.7Z"/></svg>          </span>
+        </button>
+
+        <button class="lg lg-btn lg-btn--icon nav__burger" id="burger" type="button"
+                aria-expanded="false" aria-controls="sheet"
+                aria-label="Open menu" data-i18n-attr="aria-label:ui.menu">
+          <svg class="ico" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 7.5h16M4 12h16M4 16.5h16"/></svg>        </button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="sheet" id="sheet">
+  <div class="sheet__panel lg lg-panel">
+    <span class="lg-refract"></span>
+    <div class="lg-in">
+            <a class="sheet__link" href="#about">
+        <span data-i18n="nav.about">About</span>
+        <svg class="ico" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12h15M13.5 6l6 6-6 6"/></svg>      </a>
+            <a class="sheet__link" href="#work">
+        <span data-i18n="nav.work">Experience</span>
+        <svg class="ico" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12h15M13.5 6l6 6-6 6"/></svg>      </a>
+            <a class="sheet__link" href="#projects">
+        <span data-i18n="nav.projects">Work</span>
+        <svg class="ico" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12h15M13.5 6l6 6-6 6"/></svg>      </a>
+            <a class="sheet__link" href="#skills">
+        <span data-i18n="nav.skills">Stack</span>
+        <svg class="ico" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12h15M13.5 6l6 6-6 6"/></svg>      </a>
+            <a class="sheet__link" href="#certs">
+        <span data-i18n="nav.certs">Credentials</span>
+        <svg class="ico" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12h15M13.5 6l6 6-6 6"/></svg>      </a>
+            <a class="sheet__link" href="#contact">
+        <span data-i18n="nav.contact">Contact</span>
+        <svg class="ico" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12h15M13.5 6l6 6-6 6"/></svg>      </a>
+          </div>
+  </div>
+</div>
+
+<main id="main">
+
+<!-- ================================================================ hero -->
+<section class="hero">
+  <div class="shell">
+    <div class="hero__grid">
+      <div class="hero__copy">
+        <span class="hero__eyebrow lg lg-pill rv">
+          <span class="lg-in" style="display:contents">
+            <span class="hero__dot" aria-hidden="true"></span>
+            <span data-i18n="hero.available">Available for select projects</span>
+          </span>
+        </span>
+
+        <h1 class="hero__name rv" style="--rv-d:60ms">
+          Muhamad<br><em>Fikri Haikal</em>
+        </h1>
+
+        <p class="hero__role rv" style="--rv-d:140ms">
+          <span class="hero__typed" id="typed">Full-Stack Developer</span>
+          <span class="hero__caret" aria-hidden="true"></span>
+        </p>
+
+        <p class="hero__lead rv" style="--rv-d:200ms" data-i18n="hero.lead">I design and ship production systems end to end — multi-tenant SaaS, agentic AI pipelines, and the cloud infrastructure that keeps them running.</p>
+
+        <div class="hero__cta rv" style="--rv-d:260ms">
+          <a class="lg lg-btn lg-btn--accent lg--elastic" href="#contact" data-elastic="0.18">
+            <span class="lg-hl"></span>
+            <span data-i18n="hero.cta1">Start a project</span>
+            <svg class="ico" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12h15M13.5 6l6 6-6 6"/></svg>          </a>
+          <a class="lg lg-btn lg--elastic" href="#projects" data-elastic="0.18">
+            <span class="lg-refract"></span>
+            <span class="lg-hl"></span>
+            <span data-i18n="hero.cta2">See the work</span>
+            <svg class="ico" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 4.5v15M6 13.5l6 6 6-6"/></svg>          </a>
+          <a class="lg lg-btn lg-btn--icon lg--elastic" href="https://www.linkedin.com/in/muhamad-fikri-haikal-fullstack-web-developer/"
+             target="_blank" rel="noopener" aria-label="LinkedIn">
+            <span class="lg-hl"></span><svg class="ico" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M4.98 3.5A2.5 2.5 0 1 1 2.5 6 2.5 2.5 0 0 1 4.98 3.5ZM.5 8.5h4V23h-4Zm8 0h3.8v2h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V23h-4v-6.6c0-1.57-.03-3.6-2.2-3.6-2.2 0-2.54 1.72-2.54 3.5V23h-4Z"/></svg>          </a>
+          <a class="lg lg-btn lg-btn--icon lg--elastic" href="https://github.com/haikallfikrii"
+             target="_blank" rel="noopener" aria-label="GitHub">
+            <span class="lg-hl"></span><svg class="ico" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M12 .5C5.37.5 0 5.87 0 12.5c0 5.3 3.44 9.8 8.2 11.39.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.1-.75.08-.74.08-.74 1.22.09 1.86 1.25 1.86 1.25 1.08 1.85 2.83 1.32 3.52 1.01.11-.78.42-1.32.76-1.62-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.17 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.65.24 2.87.12 3.17.77.84 1.24 1.91 1.24 3.22 0 4.61-2.8 5.62-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58A12 12 0 0 0 24 12.5C24 5.87 18.63.5 12 .5Z"/></svg>          </a>
+        </div>
+
+        <p class="hero__based rv" style="--rv-d:320ms">
+          <svg class="ico" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 21.5s6.75-5.9 6.75-10.75a6.75 6.75 0 1 0-13.5 0C5.25 15.6 12 21.5 12 21.5Z"/><circle cx="12" cy="10.5" r="2.5"/></svg>          <span data-i18n="hero.based">Based in Malaysia · working worldwide</span>
+        </p>
       </div>
 
-      <div class="home-img">
-        <img src="home.png" alt="" />
+      <figure class="hero__figure rv rv--scale" style="--rv-d:120ms">
+        <span class="hero__ring" aria-hidden="true"></span>
+        <div class="hero__frame lg lg--over-light lg--deep" id="heroFrame">
+          <span class="lg-refract"></span>
+          <div class="lg-in">
+            <img class="hero__photo" src="assets/img/photo.png"
+                 alt="Muhamad Fikri Haikal" width="1023" height="1537" fetchpriority="high">
+          </div>
+        </div>
+        <div class="hero__chip hero__chip--tl lg" data-plx="0.03">
+          <span class="lg-in">
+            <b>5+</b>
+            <span data-i18n="stats.0.label">Years shipping</span>
+          </span>
+        </div>
+        <div class="hero__chip hero__chip--br lg" data-plx="-0.035">
+          <span class="lg-in">
+            <b>24</b>
+            <span data-i18n="stats.1.label">Verified credentials</span>
+          </span>
+        </div>
+      </figure>
+    </div>
+
+    <div class="stats">
+            <div class="stat lg lg--elastic rv" style="--rv-d:0ms">
+        <span class="lg-hl"></span>
+        <div class="lg-in">
+          <div class="stat__n" data-i18n="stats.0.n">5+</div>
+          <div class="stat__l" data-i18n="stats.0.label">Years shipping</div>
+        </div>
       </div>
-    </section>
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script src="script.js"></script>
-  </body>
+            <div class="stat lg lg--elastic rv" style="--rv-d:80ms">
+        <span class="lg-hl"></span>
+        <div class="lg-in">
+          <div class="stat__n" data-i18n="stats.1.n">24</div>
+          <div class="stat__l" data-i18n="stats.1.label">Verified credentials</div>
+        </div>
+      </div>
+            <div class="stat lg lg--elastic rv" style="--rv-d:160ms">
+        <span class="lg-hl"></span>
+        <div class="lg-in">
+          <div class="stat__n" data-i18n="stats.2.n">30+</div>
+          <div class="stat__l" data-i18n="stats.2.label">Delivered projects</div>
+        </div>
+      </div>
+            <div class="stat lg lg--elastic rv" style="--rv-d:240ms">
+        <span class="lg-hl"></span>
+        <div class="lg-in">
+          <div class="stat__n" data-i18n="stats.3.n">3</div>
+          <div class="stat__l" data-i18n="stats.3.label">Continents served</div>
+        </div>
+      </div>
+          </div>
+
+    <div class="marquee rv" aria-hidden="true">
+      <div class="marquee__track">
+                            <span class="marquee__item">JavaScript</span>
+                    <span class="marquee__item">TypeScript</span>
+                    <span class="marquee__item">PHP 8</span>
+                    <span class="marquee__item">Python</span>
+                    <span class="marquee__item">React</span>
+                    <span class="marquee__item">Next.js</span>
+                    <span class="marquee__item">Node.js</span>
+                    <span class="marquee__item">Laravel</span>
+                    <span class="marquee__item">WordPress</span>
+                    <span class="marquee__item">Shopify</span>
+                    <span class="marquee__item">Webflow</span>
+                    <span class="marquee__item">n8n</span>
+                    <span class="marquee__item">Make.com</span>
+                    <span class="marquee__item">Zapier</span>
+                    <span class="marquee__item">LangChain</span>
+                    <span class="marquee__item">RAG</span>
+                    <span class="marquee__item">OpenAI</span>
+                    <span class="marquee__item">Claude</span>
+                    <span class="marquee__item">AWS</span>
+                    <span class="marquee__item">Google Cloud</span>
+                    <span class="marquee__item">Azure</span>
+                    <span class="marquee__item">Supabase</span>
+                    <span class="marquee__item">MySQL</span>
+                    <span class="marquee__item">PostgreSQL</span>
+                    <span class="marquee__item">MongoDB</span>
+                    <span class="marquee__item">GraphQL</span>
+                    <span class="marquee__item">Stripe</span>
+                    <span class="marquee__item">Tailwind CSS</span>
+                                      <span class="marquee__item">JavaScript</span>
+                    <span class="marquee__item">TypeScript</span>
+                    <span class="marquee__item">PHP 8</span>
+                    <span class="marquee__item">Python</span>
+                    <span class="marquee__item">React</span>
+                    <span class="marquee__item">Next.js</span>
+                    <span class="marquee__item">Node.js</span>
+                    <span class="marquee__item">Laravel</span>
+                    <span class="marquee__item">WordPress</span>
+                    <span class="marquee__item">Shopify</span>
+                    <span class="marquee__item">Webflow</span>
+                    <span class="marquee__item">n8n</span>
+                    <span class="marquee__item">Make.com</span>
+                    <span class="marquee__item">Zapier</span>
+                    <span class="marquee__item">LangChain</span>
+                    <span class="marquee__item">RAG</span>
+                    <span class="marquee__item">OpenAI</span>
+                    <span class="marquee__item">Claude</span>
+                    <span class="marquee__item">AWS</span>
+                    <span class="marquee__item">Google Cloud</span>
+                    <span class="marquee__item">Azure</span>
+                    <span class="marquee__item">Supabase</span>
+                    <span class="marquee__item">MySQL</span>
+                    <span class="marquee__item">PostgreSQL</span>
+                    <span class="marquee__item">MongoDB</span>
+                    <span class="marquee__item">GraphQL</span>
+                    <span class="marquee__item">Stripe</span>
+                    <span class="marquee__item">Tailwind CSS</span>
+                        </div>
+    </div>
+  </div>
+</section>
+
+<!-- =============================================================== about -->
+<section class="sect" id="about">
+  <div class="shell">
+    <div class="about__grid">
+      <div class="about__rail">
+        <span class="sect__badge lg lg-pill rv">
+          <span class="lg-in" data-i18n="about.badge">About</span>
+        </span>
+        <h2 class="sect__title rv" data-split data-i18n="about.title">Engineering that survives contact with real users</h2>
+        <p class="about__lead rv" style="--rv-d:120ms" data-i18n="about.lead">I build the unglamorous parts properly: migrations, permissions, billing, retries, and logs.</p>
+      </div>
+
+      <div>
+        <div class="about__body rv">
+          <p data-i18n="about.p1">I am a full-stack developer and AI automation engineer working remotely with teams in Germany, the United States, and Malaysia. My day splits between shipping client-facing product work and wiring the automation that removes manual steps behind it.</p>
+          <p data-i18n="about.p2">Most of my recent work is multi-tenant: shared codebase, isolated data, role-aware dashboards. I care about the boring guarantees — that a split bill reconciles, a webhook retries, and a tenant can never read another tenant&#039;s rows.</p>
+        </div>
+        <div class="about__cards">
+                    <div class="about__card lg lg--elastic rv" style="--rv-d:0ms">
+            <span class="lg-refract"></span>
+            <span class="lg-hl"></span>
+            <div class="lg-in icon-tile"><svg class="ico" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m12 3.5 8.5 4.3-8.5 4.3L3.5 7.8Z"/><path d="m3.5 12.2 8.5 4.3 8.5-4.3M3.5 16.4l8.5 4.3 8.5-4.3"/></svg></div>
+            <div class="lg-in">
+              <h3 data-i18n="about.cards.0.title">Multi-tenant by default</h3>
+              <p data-i18n="about.cards.0.text">Row-level isolation, role-based dashboards, and migration discipline from the first commit.</p>
+            </div>
+          </div>
+                    <div class="about__card lg lg--elastic rv" style="--rv-d:90ms">
+            <span class="lg-refract"></span>
+            <span class="lg-hl"></span>
+            <div class="lg-in icon-tile"><svg class="ico" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="8.5" y="8.5" width="7" height="7" rx="1.5"/><path d="M12 3.5v5M12 15.5v5M3.5 12h5M15.5 12h5"/><circle cx="12" cy="3.5" r="1.2"/><circle cx="12" cy="20.5" r="1.2"/><circle cx="3.5" cy="12" r="1.2"/><circle cx="20.5" cy="12" r="1.2"/></svg></div>
+            <div class="lg-in">
+              <h3 data-i18n="about.cards.1.title">Automation that holds</h3>
+              <p data-i18n="about.cards.1.text">n8n, Make, and LLM pipelines with retries, conditionals, and observability — not happy-path demos.</p>
+            </div>
+          </div>
+                    <div class="about__card lg lg--elastic rv" style="--rv-d:180ms">
+            <span class="lg-refract"></span>
+            <span class="lg-hl"></span>
+            <div class="lg-in icon-tile"><svg class="ico" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 18.5h10.2a3.8 3.8 0 0 0 .3-7.6 5.5 5.5 0 0 0-10.6-1.3A4.2 4.2 0 0 0 7 18.5Z"/></svg></div>
+            <div class="lg-in">
+              <h3 data-i18n="about.cards.2.title">Owns the infrastructure</h3>
+              <p data-i18n="about.cards.2.text">AWS and GCP deployments with monitoring, incident response, and CDN-backed delivery.</p>
+            </div>
+          </div>
+                  </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================================================== experience -->
+<section class="sect" id="work">
+  <div class="shell">
+    <div class="sect__head">
+      <span class="sect__badge lg lg-pill rv">
+        <span class="lg-in" data-i18n="work.badge">Experience</span>
+      </span>
+      <h2 class="sect__title rv" data-split data-i18n="work.title">Roles across three continents, one stack discipline</h2>
+      <p class="sect__desc rv" style="--rv-d:100ms" data-i18n="work.desc">A roadmap of the teams I build with and what I own inside each one.</p>
+    </div>
+
+    <div class="work">
+      <div class="work__rail" id="workRail" aria-hidden="true">
+        <div class="work__year" id="workYear">2025</div>
+      </div>
+
+      <div class="work__list">
+                <article class="job lg lg--elastic rv" data-year="2025" style="--rv-d:0ms">
+          <span class="lg-refract"></span>
+          <span class="lg-hl"></span>
+          <span class="job__node" aria-hidden="true"></span>
+          <div class="lg-in">
+            <div class="job__top" aria-expanded="true">
+              <div class="lg-in icon-tile"><svg class="ico" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 3.5l1.6 4.4 4.4 1.6-4.4 1.6L12 15.5l-1.6-4.4L6 9.5l4.4-1.6Z"/><path d="M18.5 15.5l.8 2 2 .8-2 .8-.8 2-.8-2-2-.8 2-.8Z"/></svg></div>
+              <div>
+                <h3 class="job__role" data-i18n="work.jobs.growmodo.role">Senior Full-Stack Developer &amp; AI Expert</h3>
+                <p class="job__co">Growmodo GmbH</p>
+                <div class="job__meta">
+                  <span><svg class="ico" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 21.5s6.75-5.9 6.75-10.75a6.75 6.75 0 1 0-13.5 0C5.25 15.6 12 21.5 12 21.5Z"/><circle cx="12" cy="10.5" r="2.5"/></svg>Leverkusen, Germany</span>
+                  <span><svg class="ico" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="8.75"/><path d="M12 7v5.3l3.4 2"/></svg><span data-period="Nov 2025">Nov 2025 – Present</span></span>
+                  <span><svg class="ico" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="7.5" width="18" height="12" rx="2.5"/><path d="M8.5 7.5V6a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v1.5M3 12.5h18"/></svg><span data-i18n="work.jobs.growmodo.type">Full-time</span></span>
+                </div>
+              </div>
+              <span class="job__chev"><svg class="ico" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9.5 6 6 6-6"/></svg></span>
+            </div>
+
+            <div class="job__body" id="jobBody0">
+              <div>
+                <ul class="job__bullets">
+                                    <li data-i18n="work.jobs.growmodo.bullets.0">Build high-performance client sites on WordPress, Shopify, and Webflow with custom plugins and themes.</li>
+                                    <li data-i18n="work.jobs.growmodo.bullets.1">Ship REST and GraphQL integrations tuned for scale, security, and Core Web Vitals.</li>
+                                    <li data-i18n="work.jobs.growmodo.bullets.2">Apply AI across development, QA, and documentation for a distributed delivery team.</li>
+                                  </ul>
+                <div class="chips">
+                                    <span class="chip">Next.js</span>
+                                    <span class="chip">PHP</span>
+                                    <span class="chip">WordPress</span>
+                                    <span class="chip">Shopify</span>
+                                    <span class="chip">Webflow</span>
+                                    <span class="chip">n8n</span>
+                                    <span class="chip">AWS</span>
+                                  </div>
+              </div>
+            </div>
+          </div>
+        </article>
+                <article class="job lg lg--elastic rv" data-year="2025" style="--rv-d:70ms">
+          <span class="lg-refract"></span>
+          <span class="lg-hl"></span>
+          <span class="job__node" aria-hidden="true"></span>
+          <div class="lg-in">
+            <div class="job__top" aria-expanded="false">
+              <div class="lg-in icon-tile"><svg class="ico" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="4" width="6" height="5" rx="1.5"/><rect x="15" y="4" width="6" height="5" rx="1.5"/><rect x="9" y="15" width="6" height="5" rx="1.5"/><path d="M6 9v3a1.5 1.5 0 0 0 1.5 1.5h9A1.5 1.5 0 0 0 18 12V9M12 13.5V15"/></svg></div>
+              <div>
+                <h3 class="job__role" data-i18n="work.jobs.gedex.role">Full-Stack, AI Automation &amp; API Specialist</h3>
+                <p class="job__co">Gedex Network Inc.</p>
+                <div class="job__meta">
+                  <span><svg class="ico" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 21.5s6.75-5.9 6.75-10.75a6.75 6.75 0 1 0-13.5 0C5.25 15.6 12 21.5 12 21.5Z"/><circle cx="12" cy="10.5" r="2.5"/></svg>Carson City, USA</span>
+                  <span><svg class="ico" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="8.75"/><path d="M12 7v5.3l3.4 2"/></svg><span data-period="Jan 2025">Jan 2025 – Present</span></span>
+                  <span><svg class="ico" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="7.5" width="18" height="12" rx="2.5"/><path d="M8.5 7.5V6a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v1.5M3 12.5h18"/></svg><span data-i18n="work.jobs.gedex.type">Part-time</span></span>
+                </div>
+              </div>
+              <span class="job__chev"><svg class="ico" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9.5 6 6 6-6"/></svg></span>
+            </div>
+
+            <div class="job__body" id="jobBody1">
+              <div>
+                <ul class="job__bullets">
+                                    <li data-i18n="work.jobs.gedex.bullets.0">Own custom WordPress plugins, REST APIs, and Elementor interfaces for CaasEdu products.</li>
+                                    <li data-i18n="work.jobs.gedex.bullets.1">Design end-to-end n8n, Make, and LLM pipelines for AI content and multi-platform publishing.</li>
+                                    <li data-i18n="work.jobs.gedex.bullets.2">Build Google Apps Script flows that turn Sheets data into automated publishing CSVs.</li>
+                                  </ul>
+                <div class="chips">
+                                    <span class="chip">PHP</span>
+                                    <span class="chip">WordPress</span>
+                                    <span class="chip">MySQL</span>
+                                    <span class="chip">n8n</span>
+                                    <span class="chip">Make.com</span>
+                                    <span class="chip">OpenAI</span>
+                                  </div>
+              </div>
+            </div>
+          </div>
+        </article>
+                <article class="job lg lg--elastic rv" data-year="2025" style="--rv-d:140ms">
+          <span class="lg-refract"></span>
+          <span class="lg-hl"></span>
+          <span class="job__node" aria-hidden="true"></span>
+          <div class="lg-in">
+            <div class="job__top" aria-expanded="false">
+              <div class="lg-in icon-tile"><svg class="ico" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="8.5" y="8.5" width="7" height="7" rx="1.5"/><path d="M12 3.5v5M12 15.5v5M3.5 12h5M15.5 12h5"/><circle cx="12" cy="3.5" r="1.2"/><circle cx="12" cy="20.5" r="1.2"/><circle cx="3.5" cy="12" r="1.2"/><circle cx="20.5" cy="12" r="1.2"/></svg></div>
+              <div>
+                <h3 class="job__role" data-i18n="work.jobs.aigents.role">Agentic AI &amp; Automation Specialist</h3>
+                <p class="job__co">AIgents Solutions</p>
+                <div class="job__meta">
+                  <span><svg class="ico" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 21.5s6.75-5.9 6.75-10.75a6.75 6.75 0 1 0-13.5 0C5.25 15.6 12 21.5 12 21.5Z"/><circle cx="12" cy="10.5" r="2.5"/></svg>Malaysia</span>
+                  <span><svg class="ico" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="8.75"/><path d="M12 7v5.3l3.4 2"/></svg><span data-period="Apr 2025">Apr 2025 – Present</span></span>
+                  <span><svg class="ico" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="7.5" width="18" height="12" rx="2.5"/><path d="M8.5 7.5V6a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v1.5M3 12.5h18"/></svg><span data-i18n="work.jobs.aigents.type">Part-time</span></span>
+                </div>
+              </div>
+              <span class="job__chev"><svg class="ico" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9.5 6 6 6-6"/></svg></span>
+            </div>
+
+            <div class="job__body" id="jobBody2">
+              <div>
+                <ul class="job__bullets">
+                                    <li data-i18n="work.jobs.aigents.bullets.0">Deploy agentic workflows connecting AI APIs, webhooks, and no-code tooling.</li>
+                                    <li data-i18n="work.jobs.aigents.bullets.1">Maintain WordPress and Elementor sites on AWS EC2 while automating manual processes.</li>
+                                  </ul>
+                <div class="chips">
+                                    <span class="chip">n8n</span>
+                                    <span class="chip">Zapier</span>
+                                    <span class="chip">Make.com</span>
+                                    <span class="chip">OpenAI</span>
+                                    <span class="chip">Supabase</span>
+                                    <span class="chip">AWS</span>
+                                  </div>
+              </div>
+            </div>
+          </div>
+        </article>
+                <article class="job lg lg--elastic rv" data-year="2025" style="--rv-d:210ms">
+          <span class="lg-refract"></span>
+          <span class="lg-hl"></span>
+          <span class="job__node" aria-hidden="true"></span>
+          <div class="lg-in">
+            <div class="job__top" aria-expanded="false">
+              <div class="lg-in icon-tile"><svg class="ico" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 18.5h10.2a3.8 3.8 0 0 0 .3-7.6 5.5 5.5 0 0 0-10.6-1.3A4.2 4.2 0 0 0 7 18.5Z"/></svg></div>
+              <div>
+                <h3 class="job__role" data-i18n="work.jobs.jomsite.role">Fullstack Web Engineer</h3>
+                <p class="job__co">JomSite</p>
+                <div class="job__meta">
+                  <span><svg class="ico" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 21.5s6.75-5.9 6.75-10.75a6.75 6.75 0 1 0-13.5 0C5.25 15.6 12 21.5 12 21.5Z"/><circle cx="12" cy="10.5" r="2.5"/></svg>Kangar, Perlis, Malaysia · Remote</span>
+                  <span><svg class="ico" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="8.75"/><path d="M12 7v5.3l3.4 2"/></svg><span data-period="Jan 2025">Jan 2025 – Present</span></span>
+                  <span><svg class="ico" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="7.5" width="18" height="12" rx="2.5"/><path d="M8.5 7.5V6a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v1.5M3 12.5h18"/></svg><span data-i18n="work.jobs.jomsite.type">Part-time</span></span>
+                </div>
+              </div>
+              <span class="job__chev"><svg class="ico" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9.5 6 6 6-6"/></svg></span>
+            </div>
+
+            <div class="job__body" id="jobBody3">
+              <div>
+                <ul class="job__bullets">
+                                    <li data-i18n="work.jobs.jomsite.bullets.0">Continue shipping full-stack web products remotely from Kangar, Perlis, spanning Microsoft Azure, Zapier, and the broader delivery stack.</li>
+                                    <li data-i18n="work.jobs.jomsite.bullets.1">Own React and Tailwind frontends over PHP and Node backends, including payment APIs and LMS features.</li>
+                                    <li data-i18n="work.jobs.jomsite.bullets.2">Keep cloud operations healthy across Azure and AWS with monitoring, automation, and incident response.</li>
+                                  </ul>
+                <div class="chips">
+                                    <span class="chip">Microsoft Azure</span>
+                                    <span class="chip">Zapier</span>
+                                    <span class="chip">React</span>
+                                    <span class="chip">Node.js</span>
+                                    <span class="chip">PHP</span>
+                                    <span class="chip">WordPress</span>
+                                    <span class="chip">MongoDB</span>
+                                    <span class="chip">AWS</span>
+                                    <span class="chip">Tailwind CSS</span>
+                                    <span class="chip">MySQL</span>
+                                    <span class="chip">REST API</span>
+                                    <span class="chip">Git</span>
+                                  </div>
+              </div>
+            </div>
+          </div>
+        </article>
+                <article class="job lg lg--elastic rv" data-year="2022" style="--rv-d:280ms">
+          <span class="lg-refract"></span>
+          <span class="lg-hl"></span>
+          <span class="job__node" aria-hidden="true"></span>
+          <div class="lg-in">
+            <div class="job__top" aria-expanded="false">
+              <div class="lg-in icon-tile"><svg class="ico" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 18.5h10.2a3.8 3.8 0 0 0 .3-7.6 5.5 5.5 0 0 0-10.6-1.3A4.2 4.2 0 0 0 7 18.5Z"/></svg></div>
+              <div>
+                <h3 class="job__role" data-i18n="work.jobs.jomsiteft.role">Full-stack Web Engineer</h3>
+                <p class="job__co">JomSite</p>
+                <div class="job__meta">
+                  <span><svg class="ico" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 21.5s6.75-5.9 6.75-10.75a6.75 6.75 0 1 0-13.5 0C5.25 15.6 12 21.5 12 21.5Z"/><circle cx="12" cy="10.5" r="2.5"/></svg>Malaysia · Hybrid</span>
+                  <span><svg class="ico" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="8.75"/><path d="M12 7v5.3l3.4 2"/></svg><span data-period="Feb 2022">Feb 2022 – Jan 2025</span></span>
+                  <span><svg class="ico" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="7.5" width="18" height="12" rx="2.5"/><path d="M8.5 7.5V6a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v1.5M3 12.5h18"/></svg><span data-i18n="work.jobs.jomsiteft.type">Full-time</span></span>
+                </div>
+              </div>
+              <span class="job__chev"><svg class="ico" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9.5 6 6 6-6"/></svg></span>
+            </div>
+
+            <div class="job__body" id="jobBody4">
+              <div>
+                <ul class="job__bullets">
+                                    <li data-i18n="work.jobs.jomsiteft.bullets.0">Built and maintained client web products end-to-end in a hybrid Malaysia setup for three years.</li>
+                                    <li data-i18n="work.jobs.jomsiteft.bullets.1">Shipped React and Tailwind frontends over PHP and Node backends, including payment APIs and an LMS.</li>
+                                    <li data-i18n="work.jobs.jomsiteft.bullets.2">Owned DevOps on AWS — EC2, RDS, S3, IAM, VPC — with monitoring and incident response.</li>
+                                  </ul>
+                <div class="chips">
+                                    <span class="chip">React</span>
+                                    <span class="chip">Node.js</span>
+                                    <span class="chip">PHP</span>
+                                    <span class="chip">WordPress</span>
+                                    <span class="chip">MongoDB</span>
+                                    <span class="chip">AWS</span>
+                                    <span class="chip">Tailwind CSS</span>
+                                    <span class="chip">MySQL</span>
+                                    <span class="chip">REST API</span>
+                                    <span class="chip">JavaScript</span>
+                                  </div>
+              </div>
+            </div>
+          </div>
+        </article>
+                <article class="job lg lg--elastic rv" data-year="2024" style="--rv-d:350ms">
+          <span class="lg-refract"></span>
+          <span class="lg-hl"></span>
+          <span class="job__node" aria-hidden="true"></span>
+          <div class="lg-in">
+            <div class="job__top" aria-expanded="false">
+              <div class="lg-in icon-tile"><svg class="ico" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="8.75"/><path d="M3.25 12h17.5M12 3.25c2.4 2.4 3.6 5.3 3.6 8.75S14.4 18.35 12 20.75c-2.4-2.4-3.6-5.3-3.6-8.75S9.6 5.65 12 3.25Z"/></svg></div>
+              <div>
+                <h3 class="job__role" data-i18n="work.jobs.upwork.role">Full-Stack Web Developer</h3>
+                <p class="job__co">Upwork</p>
+                <div class="job__meta">
+                  <span><svg class="ico" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 21.5s6.75-5.9 6.75-10.75a6.75 6.75 0 1 0-13.5 0C5.25 15.6 12 21.5 12 21.5Z"/><circle cx="12" cy="10.5" r="2.5"/></svg>Remote</span>
+                  <span><svg class="ico" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="8.75"/><path d="M12 7v5.3l3.4 2"/></svg><span data-period="Sep 2024">Sep 2024 – Present</span></span>
+                  <span><svg class="ico" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="7.5" width="18" height="12" rx="2.5"/><path d="M8.5 7.5V6a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v1.5M3 12.5h18"/></svg><span data-i18n="work.jobs.upwork.type">Freelance</span></span>
+                </div>
+              </div>
+              <span class="job__chev"><svg class="ico" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9.5 6 6 6-6"/></svg></span>
+            </div>
+
+            <div class="job__body" id="jobBody5">
+              <div>
+                <ul class="job__bullets">
+                                    <li data-i18n="work.jobs.upwork.bullets.0">Run full project cycles for international clients: scope, estimate, build, deploy, and handover documentation.</li>
+                                  </ul>
+                <div class="chips">
+                                    <span class="chip">Full-Stack</span>
+                                    <span class="chip">Automation</span>
+                                    <span class="chip">Client Delivery</span>
+                                  </div>
+              </div>
+            </div>
+          </div>
+        </article>
+              </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================ projects — pinned sideways -->
+<section class="sect" id="projects" style="padding-bottom:0">
+  <div class="shell">
+    <div class="sect__head">
+      <span class="sect__badge lg lg-pill rv">
+        <span class="lg-in" data-i18n="projects.badge">Selected work</span>
+      </span>
+      <h2 class="sect__title rv" data-split data-i18n="projects.title">Systems that are still running</h2>
+      <p class="sect__desc rv" style="--rv-d:100ms" data-i18n="projects.desc">Shipped products, not case-study mockups.</p>
+    </div>
+  </div>
+
+  <div class="hscroll" id="projectsPin">
+    <div class="hscroll__stage">
+      <div class="hscroll__view">
+        <div class="hscroll__track">
+                    <article class="pcard lg lg--elastic lg--deep">
+            <span class="lg-refract"></span>
+            <span class="lg-hl"></span>
+            <div class="lg-in" style="display:flex;flex-direction:column;flex:1">
+              <span class="pcard__n">01 / 06</span>
+              <div class="pcard__icon"><svg class="ico" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 3.5v8.5M4.5 3.5v4a2.5 2.5 0 0 0 5 0v-4M7 12v8.5M16.5 20.5v-7M16.5 13.5c2 0 3-1.6 3-4.5 0-3.4-1.2-5.5-3-5.5s-3 2.1-3 5.5c0 2.9 1 4.5 3 4.5Z"/></svg></div>
+              <h3 class="pcard__name">TableTap SaaS</h3>
+              <p class="pcard__desc" data-i18n="projects.items.tabletap">Multi-tenant QR ordering platform with owner, cashier, waiter, and kitchen dashboards, split bills, thermal receipts, 15+ SQL migrations, and a bilingual interface.</p>
+              <div class="pcard__foot">
+                <div class="chips">
+                                    <span class="chip">Multi-tenant</span>
+                                    <span class="chip">PHP 8</span>
+                                    <span class="chip">MySQL</span>
+                                    <span class="chip">Stripe</span>
+                                  </div>
+                                <a class="pcard__link" href="https://tabletap.my" target="_blank" rel="noopener">
+                  <span data-i18n="projects.visit">Visit live site</span>
+                  <svg class="ico" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 17 17 7M8 7h9v9"/></svg>                </a>
+                              </div>
+            </div>
+          </article>
+                    <article class="pcard lg lg--elastic lg--deep">
+            <span class="lg-refract"></span>
+            <span class="lg-hl"></span>
+            <div class="lg-in" style="display:flex;flex-direction:column;flex:1">
+              <span class="pcard__n">02 / 06</span>
+              <div class="pcard__icon"><svg class="ico" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20.5 12.5c0 4-3.8 7.2-8.5 7.2a9.8 9.8 0 0 1-2.6-.35L4.5 21l1.2-3.6a6.9 6.9 0 0 1-2.2-4.9c0-4 3.8-7.2 8.5-7.2s8.5 3.2 8.5 7.2Z"/></svg></div>
+              <h3 class="pcard__name">ChatLM Widget</h3>
+              <p class="pcard__desc" data-i18n="projects.items.chatlm">Embeddable AI chat widget isolated in Shadow DOM. Bring-your-own-key or managed AI through OpenRouter, with Stripe billing, quota metering, and CORS plus API-key hardening.</p>
+              <div class="pcard__foot">
+                <div class="chips">
+                                    <span class="chip">Shadow DOM</span>
+                                    <span class="chip">OpenRouter</span>
+                                    <span class="chip">Stripe</span>
+                                    <span class="chip">BYOK</span>
+                                  </div>
+                                <a class="pcard__link" href="https://chatlm.tech" target="_blank" rel="noopener">
+                  <span data-i18n="projects.visit">Visit live site</span>
+                  <svg class="ico" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 17 17 7M8 7h9v9"/></svg>                </a>
+                              </div>
+            </div>
+          </article>
+                    <article class="pcard lg lg--elastic lg--deep">
+            <span class="lg-refract"></span>
+            <span class="lg-hl"></span>
+            <div class="lg-in" style="display:flex;flex-direction:column;flex:1">
+              <span class="pcard__n">03 / 06</span>
+              <div class="pcard__icon"><svg class="ico" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="4" width="6" height="5" rx="1.5"/><rect x="15" y="4" width="6" height="5" rx="1.5"/><rect x="9" y="15" width="6" height="5" rx="1.5"/><path d="M6 9v3a1.5 1.5 0 0 0 1.5 1.5h9A1.5 1.5 0 0 0 18 12V9M12 13.5V15"/></svg></div>
+              <h3 class="pcard__name">Agentic Content Publishing</h3>
+              <p class="pcard__desc" data-i18n="projects.items.agentic">An n8n and DeepSeek pipeline that publishes SEO posts to WordPress over the REST API, running unattended on a VPS with retries and conditional branches. Around 80% faster publishing.</p>
+              <div class="pcard__foot">
+                <div class="chips">
+                                    <span class="chip">n8n</span>
+                                    <span class="chip">DeepSeek</span>
+                                    <span class="chip">WP REST</span>
+                                    <span class="chip">VPS</span>
+                                  </div>
+                              </div>
+            </div>
+          </article>
+                    <article class="pcard lg lg--elastic lg--deep">
+            <span class="lg-refract"></span>
+            <span class="lg-hl"></span>
+            <div class="lg-in" style="display:flex;flex-direction:column;flex:1">
+              <span class="pcard__n">04 / 06</span>
+              <div class="pcard__icon"><svg class="ico" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4 4.5h5.5A2.5 2.5 0 0 1 12 7v13a2 2 0 0 0-2-2H4Z"/><path d="M20 4.5h-5.5A2.5 2.5 0 0 0 12 7v13a2 2 0 0 1 2-2h6Z"/></svg></div>
+              <h3 class="pcard__name">CAAST Education LMS</h3>
+              <p class="pcard__desc" data-i18n="projects.items.caast">WordPress and Tutor LMS with custom PHP plugins, a student-notes REST API, a content-developer dashboard, and AI publishing wired through n8n.</p>
+              <div class="pcard__foot">
+                <div class="chips">
+                                    <span class="chip">Tutor LMS</span>
+                                    <span class="chip">Custom plugin</span>
+                                    <span class="chip">REST API</span>
+                                  </div>
+                              </div>
+            </div>
+          </article>
+                    <article class="pcard lg lg--elastic lg--deep">
+            <span class="lg-refract"></span>
+            <span class="lg-hl"></span>
+            <div class="lg-in" style="display:flex;flex-direction:column;flex:1">
+              <span class="pcard__n">05 / 06</span>
+              <div class="pcard__icon"><svg class="ico" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3.5 12.5h3.2l1.8-3.4 2.4 6.2 2.2-4.5 1.4 1.7h5"/></svg></div>
+              <h3 class="pcard__name">AI Clinic Appointment Bot</h3>
+              <p class="pcard__desc" data-i18n="projects.items.clinic">WhatsApp booking bot built on WAHA and GPT-4o with Google Calendar and Sheets integration, Telegram live-agent escalation, and PDPA-aligned documentation.</p>
+              <div class="pcard__foot">
+                <div class="chips">
+                                    <span class="chip">WAHA</span>
+                                    <span class="chip">GPT-4o</span>
+                                    <span class="chip">Calendar API</span>
+                                    <span class="chip">PDPA</span>
+                                  </div>
+                              </div>
+            </div>
+          </article>
+                    <article class="pcard lg lg--elastic lg--deep">
+            <span class="lg-refract"></span>
+            <span class="lg-hl"></span>
+            <div class="lg-in" style="display:flex;flex-direction:column;flex:1">
+              <span class="pcard__n">06 / 06</span>
+              <div class="pcard__icon"><svg class="ico" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="3.5" width="7.5" height="7" rx="1.8"/><rect x="13.5" y="3.5" width="7.5" height="7" rx="1.8"/><rect x="3" y="13.5" width="7.5" height="7" rx="1.8"/><rect x="13.5" y="13.5" width="7.5" height="7" rx="1.8"/></svg></div>
+              <h3 class="pcard__name">Role-Based Company Dashboard</h3>
+              <p class="pcard__desc" data-i18n="projects.items.dashboard">Business site with a role-based dashboard using custom post types and ACF, PDF generation, WhatsApp API notifications, and AWS deployment behind a CDN.</p>
+              <div class="pcard__foot">
+                <div class="chips">
+                                    <span class="chip">ACF</span>
+                                    <span class="chip">PDF</span>
+                                    <span class="chip">WhatsApp API</span>
+                                    <span class="chip">CDN</span>
+                                  </div>
+                              </div>
+            </div>
+          </article>
+                  </div>
+      </div>
+      <p class="hscroll__hint">
+        <span data-i18n="projects.hint">Drag or scroll sideways</span>
+        <svg class="ico" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M4.5 12h15M13.5 6l6 6-6 6"/></svg>      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================== skills -->
+<section class="sect" id="skills">
+  <div class="shell">
+    <div class="sect__head">
+      <span class="sect__badge lg lg-pill rv">
+        <span class="lg-in" data-i18n="skills.badge">Stack</span>
+      </span>
+      <h2 class="sect__title rv" data-split data-i18n="skills.title">What I reach for daily</h2>
+      <p class="sect__desc rv" style="--rv-d:100ms" data-i18n="skills.desc">Tools I have shipped production work with, not just read about.</p>
+    </div>
+
+    <div class="skills__grid">
+            <div class="sgroup lg lg--elastic rv" style="--rv-d:0ms">
+        <span class="lg-refract"></span>
+        <span class="lg-hl"></span>
+        <div class="lg-in">
+          <div class="sgroup__head">
+            <span class="icon-tile"><svg class="ico" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m8.5 8.5-4 3.5 4 3.5M15.5 8.5l4 3.5-4 3.5M13.6 4.5l-3.2 15"/></svg></span>
+            <h3 data-i18n="skills.groups.frontend">Languages &amp; Frontend</h3>
+          </div>
+          <div class="chips">
+                        <span class="chip">JavaScript</span>
+                        <span class="chip">TypeScript</span>
+                        <span class="chip">PHP 8</span>
+                        <span class="chip">Python</span>
+                        <span class="chip">HTML5</span>
+                        <span class="chip">CSS3</span>
+                        <span class="chip">React.js</span>
+                        <span class="chip">Next.js</span>
+                        <span class="chip">Tailwind CSS</span>
+                        <span class="chip">Bootstrap</span>
+                      </div>
+        </div>
+      </div>
+            <div class="sgroup lg lg--elastic rv" style="--rv-d:60ms">
+        <span class="lg-refract"></span>
+        <span class="lg-hl"></span>
+        <div class="lg-in">
+          <div class="sgroup__head">
+            <span class="icon-tile"><svg class="ico" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><ellipse cx="12" cy="6" rx="7.5" ry="3"/><path d="M4.5 6v6c0 1.7 3.4 3 7.5 3s7.5-1.3 7.5-3V6M4.5 12v6c0 1.7 3.4 3 7.5 3s7.5-1.3 7.5-3v-6"/></svg></span>
+            <h3 data-i18n="skills.groups.backend">Backend &amp; Database</h3>
+          </div>
+          <div class="chips">
+                        <span class="chip">Node.js</span>
+                        <span class="chip">Express.js</span>
+                        <span class="chip">Laravel</span>
+                        <span class="chip">REST API</span>
+                        <span class="chip">GraphQL</span>
+                        <span class="chip">MySQL</span>
+                        <span class="chip">PostgreSQL</span>
+                        <span class="chip">MongoDB</span>
+                        <span class="chip">Redis</span>
+                      </div>
+        </div>
+      </div>
+            <div class="sgroup lg lg--elastic rv" style="--rv-d:120ms">
+        <span class="lg-refract"></span>
+        <span class="lg-hl"></span>
+        <div class="lg-in">
+          <div class="sgroup__head">
+            <span class="icon-tile"><svg class="ico" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3.5 9.5V19a1.5 1.5 0 0 0 1.5 1.5h14a1.5 1.5 0 0 0 1.5-1.5V9.5"/><path d="M2.5 9.5 4.8 4.3A1.5 1.5 0 0 1 6.2 3.5h11.6a1.5 1.5 0 0 1 1.4.8l2.3 5.2M9 20.5v-6h6v6"/></svg></span>
+            <h3 data-i18n="skills.groups.cms">CMS &amp; E-commerce</h3>
+          </div>
+          <div class="chips">
+                        <span class="chip">WordPress</span>
+                        <span class="chip">Shopify (Liquid)</span>
+                        <span class="chip">Webflow</span>
+                        <span class="chip">WooCommerce</span>
+                        <span class="chip">ACF</span>
+                        <span class="chip">Elementor</span>
+                        <span class="chip">Tutor LMS</span>
+                      </div>
+        </div>
+      </div>
+            <div class="sgroup lg lg--elastic rv" style="--rv-d:180ms">
+        <span class="lg-refract"></span>
+        <span class="lg-hl"></span>
+        <div class="lg-in">
+          <div class="sgroup__head">
+            <span class="icon-tile"><svg class="ico" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="8.5" y="8.5" width="7" height="7" rx="1.5"/><path d="M12 3.5v5M12 15.5v5M3.5 12h5M15.5 12h5"/><circle cx="12" cy="3.5" r="1.2"/><circle cx="12" cy="20.5" r="1.2"/><circle cx="3.5" cy="12" r="1.2"/><circle cx="20.5" cy="12" r="1.2"/></svg></span>
+            <h3 data-i18n="skills.groups.ai">AI &amp; Automation</h3>
+          </div>
+          <div class="chips">
+                        <span class="chip">n8n</span>
+                        <span class="chip">Make.com</span>
+                        <span class="chip">Zapier</span>
+                        <span class="chip">OpenAI API</span>
+                        <span class="chip">Claude API</span>
+                        <span class="chip">LangChain</span>
+                        <span class="chip">RAG</span>
+                        <span class="chip">Apps Script</span>
+                      </div>
+        </div>
+      </div>
+            <div class="sgroup lg lg--elastic rv" style="--rv-d:240ms">
+        <span class="lg-refract"></span>
+        <span class="lg-hl"></span>
+        <div class="lg-in">
+          <div class="sgroup__head">
+            <span class="icon-tile"><svg class="ico" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 18.5h10.2a3.8 3.8 0 0 0 .3-7.6 5.5 5.5 0 0 0-10.6-1.3A4.2 4.2 0 0 0 7 18.5Z"/></svg></span>
+            <h3 data-i18n="skills.groups.cloud">Cloud &amp; DevOps</h3>
+          </div>
+          <div class="chips">
+                        <span class="chip">AWS (EC2, S3, RDS, Lambda)</span>
+                        <span class="chip">Google Cloud</span>
+                        <span class="chip">Microsoft Azure</span>
+                        <span class="chip">Supabase</span>
+                        <span class="chip">Docker</span>
+                        <span class="chip">CI/CD</span>
+                        <span class="chip">Git</span>
+                      </div>
+        </div>
+      </div>
+            <div class="sgroup lg lg--elastic rv" style="--rv-d:300ms">
+        <span class="lg-refract"></span>
+        <span class="lg-hl"></span>
+        <div class="lg-in">
+          <div class="sgroup__head">
+            <span class="icon-tile"><svg class="ico" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m14.5 6.5 3-3a4.2 4.2 0 0 1-5.6 5.6l-6 6a2 2 0 1 0 2.8 2.8l6-6a4.2 4.2 0 0 1 5.6-5.6l-3 3"/></svg></span>
+            <h3 data-i18n="skills.groups.tools">Tools &amp; Collaboration</h3>
+          </div>
+          <div class="chips">
+                        <span class="chip">Stripe</span>
+                        <span class="chip">GoHighLevel</span>
+                        <span class="chip">HubSpot</span>
+                        <span class="chip">Figma</span>
+                        <span class="chip">Notion</span>
+                        <span class="chip">Slack</span>
+                        <span class="chip">Jira</span>
+                        <span class="chip">Loom</span>
+                      </div>
+        </div>
+      </div>
+          </div>
+  </div>
+</section>
+
+<!-- ========================================================= credentials -->
+<section class="sect" id="certs">
+  <div class="shell">
+    <div class="sect__head">
+      <span class="sect__badge lg lg-pill rv">
+        <span class="lg-in" data-i18n="certs.badge">Credentials</span>
+      </span>
+      <h2 class="sect__title rv" data-split data-i18n="certs.title">24 verified certifications</h2>
+      <p class="sect__desc rv" style="--rv-d:100ms" data-i18n="certs.desc">Every credential below links to its official verification page.</p>
+    </div>
+
+    <div class="certs__tabs rv" role="tablist">
+            <button class="lg-tab is-active" type="button" role="tab"
+              aria-selected="true" data-group="all"
+              data-i18n="certs.filters.all">All</button>
+            <button class="lg-tab" type="button" role="tab"
+              aria-selected="false" data-group="ai"
+              data-i18n="certs.filters.ai">AI &amp; Automation</button>
+            <button class="lg-tab" type="button" role="tab"
+              aria-selected="false" data-group="cloud"
+              data-i18n="certs.filters.cloud">Cloud</button>
+            <button class="lg-tab" type="button" role="tab"
+              aria-selected="false" data-group="web"
+              data-i18n="certs.filters.web">Web</button>
+            <button class="lg-tab" type="button" role="tab"
+              aria-selected="false" data-group="security"
+              data-i18n="certs.filters.security">Security</button>
+            <button class="lg-tab" type="button" role="tab"
+              aria-selected="false" data-group="language"
+              data-i18n="certs.filters.language">Language</button>
+          </div>
+
+    <div class="certs__grid">
+            <button class="cert lg lg--elastic rv" type="button"
+              data-slug="claude-code-101" data-group="ai"
+              style="--rv-d:0ms"
+              aria-label="Certificate of Completion: Claude Code 101 — Anthropic">
+        <span class="lg-hl"></span>
+        <span class="cert__art">
+          <img src="assets/certs/claude-code-101.jpg" alt="Certificate of Completion: Claude Code 101" loading="lazy" decoding="async">          <span class="cert__zoom"><span><svg class="ico" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="10.75" cy="10.75" r="6.75"/><path d="m15.8 15.8 4.7 4.7M8.2 10.75h5M10.75 8.25v5"/></svg></span></span>
+        </span>
+        <span class="cert__body lg-in">
+          <span class="cert__name">Certificate of Completion: Claude Code 101</span>
+          <span class="cert__issuer-row">
+                        <img class="cert__logo" src="assets/certs/logos/anthropic.png" alt="" width="22" height="22" loading="lazy" decoding="async">
+                        <span class="cert__issuer">Anthropic</span>
+          </span>
+          <span class="cert__date"></span>
+          <span class="cert__foot is-verified">
+            <svg class="ico" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m12 3 2.2 1.6 2.7-.2 1 2.5 2.3 1.4-.6 2.6.9 2.6-2.1 1.7-.7 2.6-2.7.2L12 21l-2.2-1.6-2.7-.2-.7-2.6-2.1-1.7.9-2.6-.6-2.6L6.8 6.9l1-2.5 2.7.2Z"/><path d="m9 12 2.2 2.2L15.4 10"/></svg><span></span>
+          </span>
+        </span>
+      </button>
+            <button class="cert lg lg--elastic rv" type="button"
+              data-slug="gcp-mlops-genai" data-group="ai"
+              style="--rv-d:40ms"
+              aria-label="Machine Learning Operations (MLOps) for Generative AI — Google Cloud Skills Boost">
+        <span class="lg-hl"></span>
+        <span class="cert__art">
+          <svg class="cert-art" viewBox="0 0 320 200" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Machine Learning Operations (MLOps) for Gener…">
+  <defs>
+    <linearGradient id="cw4138905688g" gradientTransform="rotate(43 .5 .5)">
+      <stop offset="0" stop-color="#4285f4" stop-opacity=".85"/>
+      <stop offset="1" stop-color="#4285f4" stop-opacity=".22"/>
+    </linearGradient>
+    <radialGradient id="cw4138905688r" cx="18%" cy="14%" r="78%">
+      <stop offset="0" stop-color="#fff" stop-opacity=".45"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="320" height="200" fill="url(#cw4138905688g)"/>
+  <rect width="320" height="200" fill="url(#cw4138905688r)"/>
+  <g fill="none" stroke="#fff" stroke-opacity=".22" stroke-width="1">
+    <circle cx="272" cy="42" r="54"/><circle cx="272" cy="42" r="34"/><circle cx="40" cy="172" r="46"/>
+  </g>
+  <text x="24" y="52" font-family="Space Grotesk, Inter, sans-serif" font-size="26" font-weight="700" fill="#fff" fill-opacity=".92">GC</text>
+  <text x="24" y="126" font-family="Inter, sans-serif" font-size="14" font-weight="600" fill="#fff" fill-opacity=".95">Machine Learning Operations (MLOps) for Gener…</text>
+  <text x="24" y="150" font-family="Inter, sans-serif" font-size="11" font-weight="500" fill="#fff" fill-opacity=".7">Google Cloud Skills Boost</text>
+</svg>          <span class="cert__zoom"><span><svg class="ico" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="10.75" cy="10.75" r="6.75"/><path d="m15.8 15.8 4.7 4.7M8.2 10.75h5M10.75 8.25v5"/></svg></span></span>
+        </span>
+        <span class="cert__body lg-in">
+          <span class="cert__name">Machine Learning Operations (MLOps) for Generative AI</span>
+          <span class="cert__issuer-row">
+                        <img class="cert__logo" src="assets/certs/logos/gcp.png" alt="" width="22" height="22" loading="lazy" decoding="async">
+                        <span class="cert__issuer">Google Cloud Skills Boost</span>
+          </span>
+          <span class="cert__date"></span>
+          <span class="cert__foot is-verified">
+            <svg class="ico" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m12 3 2.2 1.6 2.7-.2 1 2.5 2.3 1.4-.6 2.6.9 2.6-2.1 1.7-.7 2.6-2.7.2L12 21l-2.2-1.6-2.7-.2-.7-2.6-2.1-1.7.9-2.6-.6-2.6L6.8 6.9l1-2.5 2.7.2Z"/><path d="m9 12 2.2 2.2L15.4 10"/></svg><span></span>
+          </span>
+        </span>
+      </button>
+            <button class="cert lg lg--elastic rv" type="button"
+              data-slug="make-advanced" data-group="ai"
+              style="--rv-d:80ms"
+              aria-label="Make Advanced — Make">
+        <span class="lg-hl"></span>
+        <span class="cert__art">
+          <img src="assets/certs/make-advanced.jpg" alt="Make Advanced" loading="lazy" decoding="async">          <span class="cert__zoom"><span><svg class="ico" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="10.75" cy="10.75" r="6.75"/><path d="m15.8 15.8 4.7 4.7M8.2 10.75h5M10.75 8.25v5"/></svg></span></span>
+        </span>
+        <span class="cert__body lg-in">
+          <span class="cert__name">Make Advanced</span>
+          <span class="cert__issuer-row">
+                        <img class="cert__logo" src="assets/certs/logos/make.png" alt="" width="22" height="22" loading="lazy" decoding="async">
+                        <span class="cert__issuer">Make</span>
+          </span>
+          <span class="cert__date"></span>
+          <span class="cert__foot is-verified">
+            <svg class="ico" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m12 3 2.2 1.6 2.7-.2 1 2.5 2.3 1.4-.6 2.6.9 2.6-2.1 1.7-.7 2.6-2.7.2L12 21l-2.2-1.6-2.7-.2-.7-2.6-2.1-1.7.9-2.6-.6-2.6L6.8 6.9l1-2.5 2.7.2Z"/><path d="m9 12 2.2 2.2L15.4 10"/></svg><span></span>
+          </span>
+        </span>
+      </button>
+            <button class="cert lg lg--elastic rv" type="button"
+              data-slug="make-intermediate" data-group="ai"
+              style="--rv-d:120ms"
+              aria-label="Make Intermediate — Make">
+        <span class="lg-hl"></span>
+        <span class="cert__art">
+          <img src="assets/certs/make-intermediate.jpg" alt="Make Intermediate" loading="lazy" decoding="async">          <span class="cert__zoom"><span><svg class="ico" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="10.75" cy="10.75" r="6.75"/><path d="m15.8 15.8 4.7 4.7M8.2 10.75h5M10.75 8.25v5"/></svg></span></span>
+        </span>
+        <span class="cert__body lg-in">
+          <span class="cert__name">Make Intermediate</span>
+          <span class="cert__issuer-row">
+                        <img class="cert__logo" src="assets/certs/logos/make.png" alt="" width="22" height="22" loading="lazy" decoding="async">
+                        <span class="cert__issuer">Make</span>
+          </span>
+          <span class="cert__date"></span>
+          <span class="cert__foot is-verified">
+            <svg class="ico" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m12 3 2.2 1.6 2.7-.2 1 2.5 2.3 1.4-.6 2.6.9 2.6-2.1 1.7-.7 2.6-2.7.2L12 21l-2.2-1.6-2.7-.2-.7-2.6-2.1-1.7.9-2.6-.6-2.6L6.8 6.9l1-2.5 2.7.2Z"/><path d="m9 12 2.2 2.2L15.4 10"/></svg><span></span>
+          </span>
+        </span>
+      </button>
+            <button class="cert lg lg--elastic rv" type="button"
+              data-slug="make-foundation" data-group="ai"
+              style="--rv-d:160ms"
+              aria-label="Make Foundation — Make">
+        <span class="lg-hl"></span>
+        <span class="cert__art">
+          <img src="assets/certs/make-foundation.jpg" alt="Make Foundation" loading="lazy" decoding="async">          <span class="cert__zoom"><span><svg class="ico" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="10.75" cy="10.75" r="6.75"/><path d="m15.8 15.8 4.7 4.7M8.2 10.75h5M10.75 8.25v5"/></svg></span></span>
+        </span>
+        <span class="cert__body lg-in">
+          <span class="cert__name">Make Foundation</span>
+          <span class="cert__issuer-row">
+                        <img class="cert__logo" src="assets/certs/logos/make.png" alt="" width="22" height="22" loading="lazy" decoding="async">
+                        <span class="cert__issuer">Make</span>
+          </span>
+          <span class="cert__date"></span>
+          <span class="cert__foot is-verified">
+            <svg class="ico" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m12 3 2.2 1.6 2.7-.2 1 2.5 2.3 1.4-.6 2.6.9 2.6-2.1 1.7-.7 2.6-2.7.2L12 21l-2.2-1.6-2.7-.2-.7-2.6-2.1-1.7.9-2.6-.6-2.6L6.8 6.9l1-2.5 2.7.2Z"/><path d="m9 12 2.2 2.2L15.4 10"/></svg><span></span>
+          </span>
+        </span>
+      </button>
+            <button class="cert lg lg--elastic rv" type="button"
+              data-slug="skills-boost-w2" data-group="cloud"
+              style="--rv-d:200ms"
+              aria-label="Skills Boost Arcade Trivia September 2025 Week 2 — Google">
+        <span class="lg-hl"></span>
+        <span class="cert__art">
+          <img src="assets/certs/skills-boost-w2.jpg" alt="Skills Boost Arcade Trivia September 2025 Week 2" loading="lazy" decoding="async">          <span class="cert__zoom"><span><svg class="ico" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="10.75" cy="10.75" r="6.75"/><path d="m15.8 15.8 4.7 4.7M8.2 10.75h5M10.75 8.25v5"/></svg></span></span>
+        </span>
+        <span class="cert__body lg-in">
+          <span class="cert__name">Skills Boost Arcade Trivia September 2025 Week 2</span>
+          <span class="cert__issuer-row">
+                        <img class="cert__logo" src="assets/certs/logos/google.png" alt="" width="22" height="22" loading="lazy" decoding="async">
+                        <span class="cert__issuer">Google</span>
+          </span>
+          <span class="cert__date"></span>
+          <span class="cert__foot is-verified">
+            <svg class="ico" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m12 3 2.2 1.6 2.7-.2 1 2.5 2.3 1.4-.6 2.6.9 2.6-2.1 1.7-.7 2.6-2.7.2L12 21l-2.2-1.6-2.7-.2-.7-2.6-2.1-1.7.9-2.6-.6-2.6L6.8 6.9l1-2.5 2.7.2Z"/><path d="m9 12 2.2 2.2L15.4 10"/></svg><span></span>
+          </span>
+        </span>
+      </button>
+            <button class="cert lg lg--elastic rv" type="button"
+              data-slug="skills-boost-w1" data-group="cloud"
+              style="--rv-d:240ms"
+              aria-label="Skills Boost Arcade Trivia September 2025 Week 1 — Google">
+        <span class="lg-hl"></span>
+        <span class="cert__art">
+          <img src="assets/certs/skills-boost-w1.jpg" alt="Skills Boost Arcade Trivia September 2025 Week 1" loading="lazy" decoding="async">          <span class="cert__zoom"><span><svg class="ico" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="10.75" cy="10.75" r="6.75"/><path d="m15.8 15.8 4.7 4.7M8.2 10.75h5M10.75 8.25v5"/></svg></span></span>
+        </span>
+        <span class="cert__body lg-in">
+          <span class="cert__name">Skills Boost Arcade Trivia September 2025 Week 1</span>
+          <span class="cert__issuer-row">
+                        <img class="cert__logo" src="assets/certs/logos/google.png" alt="" width="22" height="22" loading="lazy" decoding="async">
+                        <span class="cert__issuer">Google</span>
+          </span>
+          <span class="cert__date"></span>
+          <span class="cert__foot is-verified">
+            <svg class="ico" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m12 3 2.2 1.6 2.7-.2 1 2.5 2.3 1.4-.6 2.6.9 2.6-2.1 1.7-.7 2.6-2.7.2L12 21l-2.2-1.6-2.7-.2-.7-2.6-2.1-1.7.9-2.6-.6-2.6L6.8 6.9l1-2.5 2.7.2Z"/><path d="m9 12 2.2 2.2L15.4 10"/></svg><span></span>
+          </span>
+        </span>
+      </button>
+            <button class="cert lg lg--elastic rv" type="button"
+              data-slug="aws-restart-graduate" data-group="cloud"
+              style="--rv-d:280ms"
+              aria-label="AWS re/Start Graduate — Amazon Web Services (AWS)">
+        <span class="lg-hl"></span>
+        <span class="cert__art">
+          <img src="assets/certs/aws-restart-graduate.jpg" alt="AWS re/Start Graduate" loading="lazy" decoding="async">          <span class="cert__zoom"><span><svg class="ico" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="10.75" cy="10.75" r="6.75"/><path d="m15.8 15.8 4.7 4.7M8.2 10.75h5M10.75 8.25v5"/></svg></span></span>
+        </span>
+        <span class="cert__body lg-in">
+          <span class="cert__name">AWS re/Start Graduate</span>
+          <span class="cert__issuer-row">
+                        <img class="cert__logo" src="assets/certs/logos/aws.png" alt="" width="22" height="22" loading="lazy" decoding="async">
+                        <span class="cert__issuer">Amazon Web Services (AWS)</span>
+          </span>
+          <span class="cert__date"></span>
+          <span class="cert__foot is-verified">
+            <svg class="ico" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m12 3 2.2 1.6 2.7-.2 1 2.5 2.3 1.4-.6 2.6.9 2.6-2.1 1.7-.7 2.6-2.7.2L12 21l-2.2-1.6-2.7-.2-.7-2.6-2.1-1.7.9-2.6-.6-2.6L6.8 6.9l1-2.5 2.7.2Z"/><path d="m9 12 2.2 2.2L15.4 10"/></svg><span></span>
+          </span>
+        </span>
+      </button>
+            <button class="cert lg lg--elastic rv" type="button"
+              data-slug="aws-cloud-practitioner" data-group="cloud"
+              style="--rv-d:0ms"
+              aria-label="AWS Cloud Practitioner — Orbit Future Academy">
+        <span class="lg-hl"></span>
+        <span class="cert__art">
+          <img src="assets/certs/aws-cloud-practitioner.jpg" alt="AWS Cloud Practitioner" loading="lazy" decoding="async">          <span class="cert__zoom"><span><svg class="ico" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="10.75" cy="10.75" r="6.75"/><path d="m15.8 15.8 4.7 4.7M8.2 10.75h5M10.75 8.25v5"/></svg></span></span>
+        </span>
+        <span class="cert__body lg-in">
+          <span class="cert__name">AWS Cloud Practitioner</span>
+          <span class="cert__issuer-row">
+                        <img class="cert__logo" src="assets/certs/logos/orbit.png" alt="" width="22" height="22" loading="lazy" decoding="async">
+                        <span class="cert__issuer">Orbit Future Academy</span>
+          </span>
+          <span class="cert__date"></span>
+          <span class="cert__foot is-verified">
+            <svg class="ico" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m12 3 2.2 1.6 2.7-.2 1 2.5 2.3 1.4-.6 2.6.9 2.6-2.1 1.7-.7 2.6-2.7.2L12 21l-2.2-1.6-2.7-.2-.7-2.6-2.1-1.7.9-2.6-.6-2.6L6.8 6.9l1-2.5 2.7.2Z"/><path d="m9 12 2.2 2.2L15.4 10"/></svg><span></span>
+          </span>
+        </span>
+      </button>
+            <button class="cert lg lg--elastic rv" type="button"
+              data-slug="azure-doc-intelligence" data-group="ai"
+              style="--rv-d:40ms"
+              aria-label="Develop Solutions with Azure AI Document Intelligence — Microsoft">
+        <span class="lg-hl"></span>
+        <span class="cert__art">
+          <img src="assets/certs/azure-doc-intelligence.png" alt="Develop Solutions with Azure AI Document Intelligence" loading="lazy" decoding="async">          <span class="cert__zoom"><span><svg class="ico" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="10.75" cy="10.75" r="6.75"/><path d="m15.8 15.8 4.7 4.7M8.2 10.75h5M10.75 8.25v5"/></svg></span></span>
+        </span>
+        <span class="cert__body lg-in">
+          <span class="cert__name">Develop Solutions with Azure AI Document Intelligence</span>
+          <span class="cert__issuer-row">
+                        <img class="cert__logo" src="assets/certs/logos/microsoft.png" alt="" width="22" height="22" loading="lazy" decoding="async">
+                        <span class="cert__issuer">Microsoft</span>
+          </span>
+          <span class="cert__date"></span>
+          <span class="cert__foot is-verified">
+            <svg class="ico" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m12 3 2.2 1.6 2.7-.2 1 2.5 2.3 1.4-.6 2.6.9 2.6-2.1 1.7-.7 2.6-2.7.2L12 21l-2.2-1.6-2.7-.2-.7-2.6-2.1-1.7.9-2.6-.6-2.6L6.8 6.9l1-2.5 2.7.2Z"/><path d="m9 12 2.2 2.2L15.4 10"/></svg><span></span>
+          </span>
+        </span>
+      </button>
+            <button class="cert lg lg--elastic rv" type="button"
+              data-slug="azure-semantic-kernel" data-group="ai"
+              style="--rv-d:80ms"
+              aria-label="Develop AI Agents using Azure OpenAI and the Semantic Kernel SDK — Microsoft">
+        <span class="lg-hl"></span>
+        <span class="cert__art">
+          <img src="assets/certs/azure-semantic-kernel.png" alt="Develop AI Agents using Azure OpenAI and the Semantic Kernel SDK" loading="lazy" decoding="async">          <span class="cert__zoom"><span><svg class="ico" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="10.75" cy="10.75" r="6.75"/><path d="m15.8 15.8 4.7 4.7M8.2 10.75h5M10.75 8.25v5"/></svg></span></span>
+        </span>
+        <span class="cert__body lg-in">
+          <span class="cert__name">Develop AI Agents using Azure OpenAI and the Semantic Kernel SDK</span>
+          <span class="cert__issuer-row">
+                        <img class="cert__logo" src="assets/certs/logos/microsoft.png" alt="" width="22" height="22" loading="lazy" decoding="async">
+                        <span class="cert__issuer">Microsoft</span>
+          </span>
+          <span class="cert__date"></span>
+          <span class="cert__foot is-verified">
+            <svg class="ico" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m12 3 2.2 1.6 2.7-.2 1 2.5 2.3 1.4-.6 2.6.9 2.6-2.1 1.7-.7 2.6-2.7.2L12 21l-2.2-1.6-2.7-.2-.7-2.6-2.1-1.7.9-2.6-.6-2.6L6.8 6.9l1-2.5 2.7.2Z"/><path d="m9 12 2.2 2.2L15.4 10"/></svg><span></span>
+          </span>
+        </span>
+      </button>
+            <button class="cert lg lg--elastic rv" type="button"
+              data-slug="azure-ai-services" data-group="ai"
+              style="--rv-d:120ms"
+              aria-label="Get Started with Azure AI Services — Microsoft">
+        <span class="lg-hl"></span>
+        <span class="cert__art">
+          <img src="assets/certs/azure-ai-services.png" alt="Get Started with Azure AI Services" loading="lazy" decoding="async">          <span class="cert__zoom"><span><svg class="ico" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="10.75" cy="10.75" r="6.75"/><path d="m15.8 15.8 4.7 4.7M8.2 10.75h5M10.75 8.25v5"/></svg></span></span>
+        </span>
+        <span class="cert__body lg-in">
+          <span class="cert__name">Get Started with Azure AI Services</span>
+          <span class="cert__issuer-row">
+                        <img class="cert__logo" src="assets/certs/logos/microsoft.png" alt="" width="22" height="22" loading="lazy" decoding="async">
+                        <span class="cert__issuer">Microsoft</span>
+          </span>
+          <span class="cert__date"></span>
+          <span class="cert__foot is-verified">
+            <svg class="ico" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m12 3 2.2 1.6 2.7-.2 1 2.5 2.3 1.4-.6 2.6.9 2.6-2.1 1.7-.7 2.6-2.7.2L12 21l-2.2-1.6-2.7-.2-.7-2.6-2.1-1.7.9-2.6-.6-2.6L6.8 6.9l1-2.5 2.7.2Z"/><path d="m9 12 2.2 2.2L15.4 10"/></svg><span></span>
+          </span>
+        </span>
+      </button>
+            <button class="cert lg lg--elastic rv" type="button"
+              data-slug="azure-cloud-concepts" data-group="cloud"
+              style="--rv-d:160ms"
+              aria-label="Microsoft Azure Cloud Concepts — Microsoft">
+        <span class="lg-hl"></span>
+        <span class="cert__art">
+          <img src="assets/certs/azure-cloud-concepts.png" alt="Microsoft Azure Cloud Concepts" loading="lazy" decoding="async">          <span class="cert__zoom"><span><svg class="ico" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="10.75" cy="10.75" r="6.75"/><path d="m15.8 15.8 4.7 4.7M8.2 10.75h5M10.75 8.25v5"/></svg></span></span>
+        </span>
+        <span class="cert__body lg-in">
+          <span class="cert__name">Microsoft Azure Cloud Concepts</span>
+          <span class="cert__issuer-row">
+                        <img class="cert__logo" src="assets/certs/logos/microsoft.png" alt="" width="22" height="22" loading="lazy" decoding="async">
+                        <span class="cert__issuer">Microsoft</span>
+          </span>
+          <span class="cert__date"></span>
+          <span class="cert__foot is-verified">
+            <svg class="ico" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m12 3 2.2 1.6 2.7-.2 1 2.5 2.3 1.4-.6 2.6.9 2.6-2.1 1.7-.7 2.6-2.7.2L12 21l-2.2-1.6-2.7-.2-.7-2.6-2.1-1.7.9-2.6-.6-2.6L6.8 6.9l1-2.5 2.7.2Z"/><path d="m9 12 2.2 2.2L15.4 10"/></svg><span></span>
+          </span>
+        </span>
+      </button>
+            <button class="cert lg lg--elastic rv" type="button"
+              data-slug="azure-ai-fundamentals" data-group="ai"
+              style="--rv-d:200ms"
+              aria-label="Microsoft Azure AI Fundamentals — Microsoft">
+        <span class="lg-hl"></span>
+        <span class="cert__art">
+          <img src="assets/certs/azure-ai-fundamentals.png" alt="Microsoft Azure AI Fundamentals" loading="lazy" decoding="async">          <span class="cert__zoom"><span><svg class="ico" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="10.75" cy="10.75" r="6.75"/><path d="m15.8 15.8 4.7 4.7M8.2 10.75h5M10.75 8.25v5"/></svg></span></span>
+        </span>
+        <span class="cert__body lg-in">
+          <span class="cert__name">Microsoft Azure AI Fundamentals</span>
+          <span class="cert__issuer-row">
+                        <img class="cert__logo" src="assets/certs/logos/microsoft.png" alt="" width="22" height="22" loading="lazy" decoding="async">
+                        <span class="cert__issuer">Microsoft</span>
+          </span>
+          <span class="cert__date"></span>
+          <span class="cert__foot is-verified">
+            <svg class="ico" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m12 3 2.2 1.6 2.7-.2 1 2.5 2.3 1.4-.6 2.6.9 2.6-2.1 1.7-.7 2.6-2.7.2L12 21l-2.2-1.6-2.7-.2-.7-2.6-2.1-1.7.9-2.6-.6-2.6L6.8 6.9l1-2.5 2.7.2Z"/><path d="m9 12 2.2 2.2L15.4 10"/></svg><span></span>
+          </span>
+        </span>
+      </button>
+            <button class="cert lg lg--elastic rv" type="button"
+              data-slug="ms-security-compliance-identity" data-group="security"
+              style="--rv-d:240ms"
+              aria-label="Microsoft Security, Compliance, and Identity Fundamentals — Microsoft">
+        <span class="lg-hl"></span>
+        <span class="cert__art">
+          <img src="assets/certs/ms-security-compliance-identity.jpg" alt="Microsoft Security, Compliance, and Identity Fundamentals" loading="lazy" decoding="async">          <span class="cert__zoom"><span><svg class="ico" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="10.75" cy="10.75" r="6.75"/><path d="m15.8 15.8 4.7 4.7M8.2 10.75h5M10.75 8.25v5"/></svg></span></span>
+        </span>
+        <span class="cert__body lg-in">
+          <span class="cert__name">Microsoft Security, Compliance, and Identity Fundamentals</span>
+          <span class="cert__issuer-row">
+                        <img class="cert__logo" src="assets/certs/logos/microsoft.png" alt="" width="22" height="22" loading="lazy" decoding="async">
+                        <span class="cert__issuer">Microsoft</span>
+          </span>
+          <span class="cert__date"></span>
+          <span class="cert__foot is-verified">
+            <svg class="ico" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m12 3 2.2 1.6 2.7-.2 1 2.5 2.3 1.4-.6 2.6.9 2.6-2.1 1.7-.7 2.6-2.7.2L12 21l-2.2-1.6-2.7-.2-.7-2.6-2.1-1.7.9-2.6-.6-2.6L6.8 6.9l1-2.5 2.7.2Z"/><path d="m9 12 2.2 2.2L15.4 10"/></svg><span></span>
+          </span>
+        </span>
+      </button>
+            <button class="cert lg lg--elastic rv" type="button"
+              data-slug="harisenin-fullstack" data-group="web"
+              style="--rv-d:280ms"
+              aria-label="Fullstack Web Development — Harisenin.com">
+        <span class="lg-hl"></span>
+        <span class="cert__art">
+          <img src="assets/certs/harisenin-fullstack.jpg" alt="Fullstack Web Development" loading="lazy" decoding="async">          <span class="cert__zoom"><span><svg class="ico" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="10.75" cy="10.75" r="6.75"/><path d="m15.8 15.8 4.7 4.7M8.2 10.75h5M10.75 8.25v5"/></svg></span></span>
+        </span>
+        <span class="cert__body lg-in">
+          <span class="cert__name">Fullstack Web Development</span>
+          <span class="cert__issuer-row">
+                        <img class="cert__logo" src="assets/certs/logos/harisenin.png" alt="" width="22" height="22" loading="lazy" decoding="async">
+                        <span class="cert__issuer">Harisenin.com</span>
+          </span>
+          <span class="cert__date"></span>
+          <span class="cert__foot is-verified">
+            <svg class="ico" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m12 3 2.2 1.6 2.7-.2 1 2.5 2.3 1.4-.6 2.6.9 2.6-2.1 1.7-.7 2.6-2.7.2L12 21l-2.2-1.6-2.7-.2-.7-2.6-2.1-1.7.9-2.6-.6-2.6L6.8 6.9l1-2.5 2.7.2Z"/><path d="m9 12 2.2 2.2L15.4 10"/></svg><span></span>
+          </span>
+        </span>
+      </button>
+            <button class="cert lg lg--elastic rv" type="button"
+              data-slug="fcc-responsive-web" data-group="web"
+              style="--rv-d:0ms"
+              aria-label="Responsive Web Design — freeCodeCamp">
+        <span class="lg-hl"></span>
+        <span class="cert__art">
+          <svg class="cert-art" viewBox="0 0 320 200" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Responsive Web Design">
+  <defs>
+    <linearGradient id="cw3279931240g" gradientTransform="rotate(55 .5 .5)">
+      <stop offset="0" stop-color="#5f78ff" stop-opacity=".85"/>
+      <stop offset="1" stop-color="#5f78ff" stop-opacity=".22"/>
+    </linearGradient>
+    <radialGradient id="cw3279931240r" cx="18%" cy="14%" r="78%">
+      <stop offset="0" stop-color="#fff" stop-opacity=".45"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="320" height="200" fill="url(#cw3279931240g)"/>
+  <rect width="320" height="200" fill="url(#cw3279931240r)"/>
+  <g fill="none" stroke="#fff" stroke-opacity=".22" stroke-width="1">
+    <circle cx="272" cy="42" r="54"/><circle cx="272" cy="42" r="34"/><circle cx="40" cy="172" r="46"/>
+  </g>
+  <text x="24" y="52" font-family="Space Grotesk, Inter, sans-serif" font-size="26" font-weight="700" fill="#fff" fill-opacity=".92">FC</text>
+  <text x="24" y="126" font-family="Inter, sans-serif" font-size="14" font-weight="600" fill="#fff" fill-opacity=".95">Responsive Web Design</text>
+  <text x="24" y="150" font-family="Inter, sans-serif" font-size="11" font-weight="500" fill="#fff" fill-opacity=".7">freeCodeCamp</text>
+</svg>          <span class="cert__zoom"><span><svg class="ico" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="10.75" cy="10.75" r="6.75"/><path d="m15.8 15.8 4.7 4.7M8.2 10.75h5M10.75 8.25v5"/></svg></span></span>
+        </span>
+        <span class="cert__body lg-in">
+          <span class="cert__name">Responsive Web Design</span>
+          <span class="cert__issuer-row">
+                        <img class="cert__logo" src="assets/certs/logos/freecodecamp.png" alt="" width="22" height="22" loading="lazy" decoding="async">
+                        <span class="cert__issuer">freeCodeCamp</span>
+          </span>
+          <span class="cert__date"></span>
+          <span class="cert__foot is-verified">
+            <svg class="ico" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m12 3 2.2 1.6 2.7-.2 1 2.5 2.3 1.4-.6 2.6.9 2.6-2.1 1.7-.7 2.6-2.7.2L12 21l-2.2-1.6-2.7-.2-.7-2.6-2.1-1.7.9-2.6-.6-2.6L6.8 6.9l1-2.5 2.7.2Z"/><path d="m9 12 2.2 2.2L15.4 10"/></svg><span></span>
+          </span>
+        </span>
+      </button>
+            <button class="cert lg lg--elastic rv" type="button"
+              data-slug="simplilearn-php" data-group="web"
+              style="--rv-d:40ms"
+              aria-label="PHP Programming — Simplilearn">
+        <span class="lg-hl"></span>
+        <span class="cert__art">
+          <img src="assets/certs/simplilearn-php.jpg" alt="PHP Programming" loading="lazy" decoding="async">          <span class="cert__zoom"><span><svg class="ico" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="10.75" cy="10.75" r="6.75"/><path d="m15.8 15.8 4.7 4.7M8.2 10.75h5M10.75 8.25v5"/></svg></span></span>
+        </span>
+        <span class="cert__body lg-in">
+          <span class="cert__name">PHP Programming</span>
+          <span class="cert__issuer-row">
+                        <img class="cert__logo" src="assets/certs/logos/simplilearn.png" alt="" width="22" height="22" loading="lazy" decoding="async">
+                        <span class="cert__issuer">Simplilearn</span>
+          </span>
+          <span class="cert__date"></span>
+          <span class="cert__foot is-verified">
+            <svg class="ico" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m12 3 2.2 1.6 2.7-.2 1 2.5 2.3 1.4-.6 2.6.9 2.6-2.1 1.7-.7 2.6-2.7.2L12 21l-2.2-1.6-2.7-.2-.7-2.6-2.1-1.7.9-2.6-.6-2.6L6.8 6.9l1-2.5 2.7.2Z"/><path d="m9 12 2.2 2.2L15.4 10"/></svg><span></span>
+          </span>
+        </span>
+      </button>
+            <button class="cert lg lg--elastic rv" type="button"
+              data-slug="kelas-uiux-figma" data-group="web"
+              style="--rv-d:80ms"
+              aria-label="Certification of UI/UX Design by Figma — Kelas.com">
+        <span class="lg-hl"></span>
+        <span class="cert__art">
+          <img src="assets/certs/kelas-uiux-figma.jpg" alt="Certification of UI/UX Design by Figma" loading="lazy" decoding="async">          <span class="cert__zoom"><span><svg class="ico" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="10.75" cy="10.75" r="6.75"/><path d="m15.8 15.8 4.7 4.7M8.2 10.75h5M10.75 8.25v5"/></svg></span></span>
+        </span>
+        <span class="cert__body lg-in">
+          <span class="cert__name">Certification of UI/UX Design by Figma</span>
+          <span class="cert__issuer-row">
+                        <img class="cert__logo" src="assets/certs/logos/kelas.png" alt="" width="22" height="22" loading="lazy" decoding="async">
+                        <span class="cert__issuer">Kelas.com</span>
+          </span>
+          <span class="cert__date"></span>
+          <span class="cert__foot is-verified">
+            <svg class="ico" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m12 3 2.2 1.6 2.7-.2 1 2.5 2.3 1.4-.6 2.6.9 2.6-2.1 1.7-.7 2.6-2.7.2L12 21l-2.2-1.6-2.7-.2-.7-2.6-2.1-1.7.9-2.6-.6-2.6L6.8 6.9l1-2.5 2.7.2Z"/><path d="m9 12 2.2 2.2L15.4 10"/></svg><span></span>
+          </span>
+        </span>
+      </button>
+            <button class="cert lg lg--elastic rv" type="button"
+              data-slug="kelas-backend-node" data-group="web"
+              style="--rv-d:120ms"
+              aria-label="Back-End Development with JavaScript and Node.js — Kelas.com">
+        <span class="lg-hl"></span>
+        <span class="cert__art">
+          <img src="assets/certs/kelas-backend-node.jpg" alt="Back-End Development with JavaScript and Node.js" loading="lazy" decoding="async">          <span class="cert__zoom"><span><svg class="ico" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="10.75" cy="10.75" r="6.75"/><path d="m15.8 15.8 4.7 4.7M8.2 10.75h5M10.75 8.25v5"/></svg></span></span>
+        </span>
+        <span class="cert__body lg-in">
+          <span class="cert__name">Back-End Development with JavaScript and Node.js</span>
+          <span class="cert__issuer-row">
+                        <img class="cert__logo" src="assets/certs/logos/kelas.png" alt="" width="22" height="22" loading="lazy" decoding="async">
+                        <span class="cert__issuer">Kelas.com</span>
+          </span>
+          <span class="cert__date"></span>
+          <span class="cert__foot is-verified">
+            <svg class="ico" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m12 3 2.2 1.6 2.7-.2 1 2.5 2.3 1.4-.6 2.6.9 2.6-2.1 1.7-.7 2.6-2.7.2L12 21l-2.2-1.6-2.7-.2-.7-2.6-2.1-1.7.9-2.6-.6-2.6L6.8 6.9l1-2.5 2.7.2Z"/><path d="m9 12 2.2 2.2L15.4 10"/></svg><span></span>
+          </span>
+        </span>
+      </button>
+            <button class="cert lg lg--elastic rv" type="button"
+              data-slug="habiskerja-wordpress" data-group="web"
+              style="--rv-d:160ms"
+              aria-label="WordPress Developer Certificate — Habiskerja.com">
+        <span class="lg-hl"></span>
+        <span class="cert__art">
+          <img src="assets/certs/habiskerja-wordpress.jpg" alt="WordPress Developer Certificate" loading="lazy" decoding="async">          <span class="cert__zoom"><span><svg class="ico" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="10.75" cy="10.75" r="6.75"/><path d="m15.8 15.8 4.7 4.7M8.2 10.75h5M10.75 8.25v5"/></svg></span></span>
+        </span>
+        <span class="cert__body lg-in">
+          <span class="cert__name">WordPress Developer Certificate</span>
+          <span class="cert__issuer-row">
+                        <img class="cert__logo" src="assets/certs/logos/habiskerja.png" alt="" width="22" height="22" loading="lazy" decoding="async">
+                        <span class="cert__issuer">Habiskerja.com</span>
+          </span>
+          <span class="cert__date"></span>
+          <span class="cert__foot is-verified">
+            <svg class="ico" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m12 3 2.2 1.6 2.7-.2 1 2.5 2.3 1.4-.6 2.6.9 2.6-2.1 1.7-.7 2.6-2.7.2L12 21l-2.2-1.6-2.7-.2-.7-2.6-2.1-1.7.9-2.6-.6-2.6L6.8 6.9l1-2.5 2.7.2Z"/><path d="m9 12 2.2 2.2L15.4 10"/></svg><span></span>
+          </span>
+        </span>
+      </button>
+            <button class="cert lg lg--elastic rv" type="button"
+              data-slug="cyber-academy-infosec" data-group="security"
+              style="--rv-d:200ms"
+              aria-label="Introduction to Information Security — Cyber Academy Indonesia">
+        <span class="lg-hl"></span>
+        <span class="cert__art">
+          <img src="assets/certs/cyber-academy-infosec.jpg" alt="Introduction to Information Security" loading="lazy" decoding="async">          <span class="cert__zoom"><span><svg class="ico" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="10.75" cy="10.75" r="6.75"/><path d="m15.8 15.8 4.7 4.7M8.2 10.75h5M10.75 8.25v5"/></svg></span></span>
+        </span>
+        <span class="cert__body lg-in">
+          <span class="cert__name">Introduction to Information Security</span>
+          <span class="cert__issuer-row">
+                        <img class="cert__logo" src="assets/certs/logos/cyber.png" alt="" width="22" height="22" loading="lazy" decoding="async">
+                        <span class="cert__issuer">Cyber Academy Indonesia</span>
+          </span>
+          <span class="cert__date"></span>
+          <span class="cert__foot is-verified">
+            <svg class="ico" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m12 3 2.2 1.6 2.7-.2 1 2.5 2.3 1.4-.6 2.6.9 2.6-2.1 1.7-.7 2.6-2.7.2L12 21l-2.2-1.6-2.7-.2-.7-2.6-2.1-1.7.9-2.6-.6-2.6L6.8 6.9l1-2.5 2.7.2Z"/><path d="m9 12 2.2 2.2L15.4 10"/></svg><span></span>
+          </span>
+        </span>
+      </button>
+            <button class="cert lg lg--elastic rv" type="button"
+              data-slug="cambridge-advanced" data-group="language"
+              style="--rv-d:240ms"
+              aria-label="Cambridge English Advanced (CAE) — Cambridge English">
+        <span class="lg-hl"></span>
+        <span class="cert__art">
+          <img src="assets/certs/cambridge-advanced.jpg" alt="Cambridge English Advanced (CAE)" loading="lazy" decoding="async">          <span class="cert__zoom"><span><svg class="ico" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="10.75" cy="10.75" r="6.75"/><path d="m15.8 15.8 4.7 4.7M8.2 10.75h5M10.75 8.25v5"/></svg></span></span>
+        </span>
+        <span class="cert__body lg-in">
+          <span class="cert__name">Cambridge English Advanced (CAE)</span>
+          <span class="cert__issuer-row">
+                        <img class="cert__logo" src="assets/certs/logos/cambridge.png" alt="" width="22" height="22" loading="lazy" decoding="async">
+                        <span class="cert__issuer">Cambridge English</span>
+          </span>
+          <span class="cert__date"></span>
+          <span class="cert__foot">
+            <svg class="ico" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9.5 14.5 14.5 9.5"/><path d="M11 17.5l-1.3 1.3a4 4 0 0 1-5.7-5.7L5.3 12M13 6.5l1.3-1.3a4 4 0 0 1 5.7 5.7L18.7 12"/></svg><span></span>
+          </span>
+        </span>
+      </button>
+            <button class="cert lg lg--elastic rv" type="button"
+              data-slug="toafl-arabic" data-group="language"
+              style="--rv-d:280ms"
+              aria-label="Test of Arabic as a Foreign Language (TOAFL) — Lisanul Arab">
+        <span class="lg-hl"></span>
+        <span class="cert__art">
+          <img src="assets/certs/toafl-arabic.jpg" alt="Test of Arabic as a Foreign Language (TOAFL)" loading="lazy" decoding="async">          <span class="cert__zoom"><span><svg class="ico" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="10.75" cy="10.75" r="6.75"/><path d="m15.8 15.8 4.7 4.7M8.2 10.75h5M10.75 8.25v5"/></svg></span></span>
+        </span>
+        <span class="cert__body lg-in">
+          <span class="cert__name">Test of Arabic as a Foreign Language (TOAFL)</span>
+          <span class="cert__issuer-row">
+                        <span class="cert__issuer">Lisanul Arab</span>
+          </span>
+          <span class="cert__date"></span>
+          <span class="cert__foot is-verified">
+            <svg class="ico" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m12 3 2.2 1.6 2.7-.2 1 2.5 2.3 1.4-.6 2.6.9 2.6-2.1 1.7-.7 2.6-2.7.2L12 21l-2.2-1.6-2.7-.2-.7-2.6-2.1-1.7.9-2.6-.6-2.6L6.8 6.9l1-2.5 2.7.2Z"/><path d="m9 12 2.2 2.2L15.4 10"/></svg><span></span>
+          </span>
+        </span>
+      </button>
+          </div>
+    <p class="certs__empty" id="certsEmpty" hidden data-i18n="certs.empty">No credentials in this category.</p>
+  </div>
+</section>
+
+<!-- ============================================================= contact -->
+<section class="sect" id="contact">
+  <div class="shell">
+    <div class="sect__head">
+      <span class="sect__badge lg lg-pill rv">
+        <span class="lg-in" data-i18n="contact.badge">Contact</span>
+      </span>
+      <h2 class="sect__title rv" data-split data-i18n="contact.title">Tell me what you are building</h2>
+      <p class="sect__desc rv" style="--rv-d:100ms" data-i18n="contact.desc">Roles, product work, or an automation you want to stop doing by hand — all welcome.</p>
+    </div>
+
+    <div class="contact__grid">
+      <div class="contact__aside">
+        <a class="crow lg lg--elastic rv" href="mailto:muhamadfikrih29@gmail.com">
+          <span class="lg-hl"></span>
+          <span class="lg-in icon-tile"><svg class="ico" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="2.75" y="5" width="18.5" height="14" rx="2.5"/><path d="m4 7 8 5.6L20 7"/></svg></span>
+          <span class="lg-in">
+            <span class="crow__l" data-i18n="contact.emailLabel">Email</span>
+            <span class="crow__v">muhamadfikrih29@gmail.com</span>
+          </span>
+          <span class="lg-in crow__go"><svg class="ico" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 17 17 7M8 7h9v9"/></svg></span>
+        </a>
+
+        <a class="crow lg lg--elastic rv" style="--rv-d:70ms" href="tel:+601125352270">
+          <span class="lg-hl"></span>
+          <span class="lg-in icon-tile"><svg class="ico" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M8.2 3.6h-3a1.8 1.8 0 0 0-1.8 1.9c.3 3.9 1.9 7.5 4.5 10.2 2.6 2.6 6.2 4.2 10.1 4.5a1.8 1.8 0 0 0 1.9-1.8v-2.9a1.8 1.8 0 0 0-1.5-1.8l-2.6-.4a1.8 1.8 0 0 0-1.8.8l-.7 1a13 13 0 0 1-4.7-4.7l1-.7a1.8 1.8 0 0 0 .8-1.8l-.4-2.6a1.8 1.8 0 0 0-1.8-1.5Z"/></svg></span>
+          <span class="lg-in">
+            <span class="crow__l" data-i18n="contact.phoneLabel">Phone &amp; WhatsApp</span>
+            <span class="crow__v">+60 11-2535-2270</span>
+          </span>
+          <span class="lg-in crow__go"><svg class="ico" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 17 17 7M8 7h9v9"/></svg></span>
+        </a>
+
+        <div class="crow lg rv" style="--rv-d:140ms">
+          <span class="lg-in icon-tile"><svg class="ico" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="8.75"/><path d="M12 7v5.3l3.4 2"/></svg></span>
+          <span class="lg-in">
+            <span class="crow__l" data-i18n="contact.timeLabel">My local time</span>
+            <span class="crow__v" id="clock">—</span>
+          </span>
+          <span></span>
+        </div>
+
+        <div class="socials rv" style="--rv-d:200ms">
+          <a class="lg lg-btn lg-btn--sm lg--elastic" href="https://www.linkedin.com/in/muhamad-fikri-haikal-fullstack-web-developer/" target="_blank" rel="noopener">
+            <span class="lg-hl"></span><svg class="ico" width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M4.98 3.5A2.5 2.5 0 1 1 2.5 6 2.5 2.5 0 0 1 4.98 3.5ZM.5 8.5h4V23h-4Zm8 0h3.8v2h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V23h-4v-6.6c0-1.57-.03-3.6-2.2-3.6-2.2 0-2.54 1.72-2.54 3.5V23h-4Z"/></svg><span>LinkedIn</span>
+          </a>
+          <a class="lg lg-btn lg-btn--sm lg--elastic" href="https://github.com/haikallfikrii" target="_blank" rel="noopener">
+            <span class="lg-hl"></span><svg class="ico" width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M12 .5C5.37.5 0 5.87 0 12.5c0 5.3 3.44 9.8 8.2 11.39.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.1-.75.08-.74.08-.74 1.22.09 1.86 1.25 1.86 1.25 1.08 1.85 2.83 1.32 3.52 1.01.11-.78.42-1.32.76-1.62-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.17 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.65.24 2.87.12 3.17.77.84 1.24 1.91 1.24 3.22 0 4.61-2.8 5.62-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58A12 12 0 0 0 24 12.5C24 5.87 18.63.5 12 .5Z"/></svg><span>GitHub</span>
+          </a>
+        </div>
+      </div>
+
+      <form class="form lg lg-panel rv" style="--rv-d:80ms" id="contactForm" action="https://formsubmit.co/ajax/muhamadfikrih29@gmail.com" data-static-form="1" method="post">
+        <span class="lg-refract"></span>
+        <div class="lg-in" style="display:grid;gap:.85rem">
+          <div class="field">
+            <label for="cname" data-i18n="contact.name">Your name</label>
+            <input id="cname" name="name" type="text" required maxlength="120" autocomplete="name">
+          </div>
+          <div class="field">
+            <label for="cmail" data-i18n="contact.email">Email address</label>
+            <input id="cmail" name="email" type="email" required maxlength="160" autocomplete="email">
+          </div>
+          <div class="field">
+            <label for="cmsg" data-i18n="contact.msg">What are you working on?</label>
+            <textarea id="cmsg" name="message" required maxlength="4000"></textarea>
+          </div>
+
+          <label class="honey" for="website">Website</label>
+          <input class="honey" id="website" name="website" type="text" tabindex="-1" autocomplete="off">
+
+          <button class="lg lg-btn lg-btn--accent lg--elastic" id="formSubmit" type="submit" data-elastic="0.16">
+            <span class="lg-hl"></span>
+            <span id="formSubmitLabel" data-i18n="contact.send">Send message</span>
+            <svg class="ico" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21 3.5 10.5 14M21 3.5l-6.8 17.2-3.7-6.7-6.7-3.7Z"/></svg>          </button>
+          <p class="form__note" id="formNote" role="status" aria-live="polite"></p>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="shell foot__grid">
+    <p class="foot__text">
+      <strong>&copy; 2026 Muhamad Fikri Haikal.</strong>
+      <span data-i18n="footer.rights">All rights reserved.</span><br>
+      <span data-i18n="footer.built">Hand-built with PHP, CSS, and vanilla JavaScript. No frameworks, no page builder.</span>
+    </p>
+    <a class="lg lg-btn lg-btn--sm lg--elastic" href="#top">
+      <span class="lg-hl"></span>
+      <span data-i18n="footer.top">Back to top</span>
+      <svg class="ico ico--up" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 4.5v15M6 13.5l6 6 6-6"/></svg>    </a>
+  </div>
+</footer>
+
+<!-- =============================================== credential lightbox -->
+<div class="cmodal" id="certModal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="cmName">
+  <button class="cmodal__scrim" id="cmScrim" type="button" tabindex="-1" aria-label="Close"></button>
+  <div class="cmodal__panel lg lg-panel lg--deep">
+    <span class="lg-refract"></span>
+    <button class="cmodal__close lg lg-btn lg-btn--icon lg--elastic" id="cmClose" type="button"
+            aria-label="Close" data-i18n-attr="aria-label:certs.close">
+      <span class="lg-hl"></span><svg class="ico" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6 6 18"/></svg>    </button>
+    <div class="lg-in cmodal__grid">
+      <div class="cmodal__art" id="cmArt"></div>
+      <div class="cmodal__side">
+        <div class="cmodal__brand" id="cmBrand" hidden>
+          <img id="cmLogo" src="" alt="" width="44" height="44">
+        </div>
+        <h3 class="cmodal__name" id="cmName"></h3>
+        <p class="cmodal__issuer" id="cmIssuer"></p>
+        <dl class="cmodal__rows" id="cmRows"></dl>
+        <div class="cmodal__skills" id="cmSkills">
+          <h4 data-i18n="certs.skills">Skills covered</h4>
+          <div class="chips" id="cmChips"></div>
+        </div>
+        <a class="lg lg-btn lg-btn--accent lg--elastic" id="cmVerify" href="#" target="_blank" rel="noopener">
+          <span class="lg-hl"></span>
+          <span id="cmVerifyLabel">Show credential</span>
+          <svg class="ico" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 17 17 7M8 7h9v9"/></svg>        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  window.FH_I18N = {"en":{"meta":{"title":"Muhamad Fikri Haikal — Full-Stack Developer & AI Automation Engineer","desc":"Full-stack developer and AI automation engineer building multi-tenant SaaS, agentic workflows, and production systems for teams across Germany, the USA, and Malaysia."},"nav":{"about":"About","work":"Experience","projects":"Work","skills":"Stack","certs":"Credentials","contact":"Contact"},"hero":{"available":"Available for select projects","roles":["Full-Stack Developer","AI Automation Engineer","SaaS Architect","Cloud Practitioner"],"lead":"I design and ship production systems end to end — multi-tenant SaaS, agentic AI pipelines, and the cloud infrastructure that keeps them running.","cta1":"Start a project","cta2":"See the work","based":"Based in Malaysia · working worldwide","scroll":"Scroll"},"stats":[{"n":"5+","label":"Years shipping"},{"n":"24","label":"Verified credentials"},{"n":"30+","label":"Delivered projects"},{"n":"3","label":"Continents served"}],"about":{"badge":"About","title":"Engineering that survives contact with real users","lead":"I build the unglamorous parts properly: migrations, permissions, billing, retries, and logs.","p1":"I am a full-stack developer and AI automation engineer working remotely with teams in Germany, the United States, and Malaysia. My day splits between shipping client-facing product work and wiring the automation that removes manual steps behind it.","p2":"Most of my recent work is multi-tenant: shared codebase, isolated data, role-aware dashboards. I care about the boring guarantees — that a split bill reconciles, a webhook retries, and a tenant can never read another tenant's rows.","cards":[{"icon":"layers","title":"Multi-tenant by default","text":"Row-level isolation, role-based dashboards, and migration discipline from the first commit."},{"icon":"circuit","title":"Automation that holds","text":"n8n, Make, and LLM pipelines with retries, conditionals, and observability — not happy-path demos."},{"icon":"cloud","title":"Owns the infrastructure","text":"AWS and GCP deployments with monitoring, incident response, and CDN-backed delivery."}]},"work":{"badge":"Experience","title":"Roles across three continents, one stack discipline","desc":"A roadmap of the teams I build with and what I own inside each one.","present":"Present","jobs":{"growmodo":{"role":"Senior Full-Stack Developer & AI Expert","type":"Full-time","bullets":["Build high-performance client sites on WordPress, Shopify, and Webflow with custom plugins and themes.","Ship REST and GraphQL integrations tuned for scale, security, and Core Web Vitals.","Apply AI across development, QA, and documentation for a distributed delivery team."]},"gedex":{"role":"Full-Stack, AI Automation & API Specialist","type":"Part-time","bullets":["Own custom WordPress plugins, REST APIs, and Elementor interfaces for CaasEdu products.","Design end-to-end n8n, Make, and LLM pipelines for AI content and multi-platform publishing.","Build Google Apps Script flows that turn Sheets data into automated publishing CSVs."]},"aigents":{"role":"Agentic AI & Automation Specialist","type":"Part-time","bullets":["Deploy agentic workflows connecting AI APIs, webhooks, and no-code tooling.","Maintain WordPress and Elementor sites on AWS EC2 while automating manual processes."]},"jomsite":{"role":"Fullstack Web Engineer","type":"Part-time","bullets":["Continue shipping full-stack web products remotely from Kangar, Perlis, spanning Microsoft Azure, Zapier, and the broader delivery stack.","Own React and Tailwind frontends over PHP and Node backends, including payment APIs and LMS features.","Keep cloud operations healthy across Azure and AWS with monitoring, automation, and incident response."]},"jomsiteft":{"role":"Full-stack Web Engineer","type":"Full-time","bullets":["Built and maintained client web products end-to-end in a hybrid Malaysia setup for three years.","Shipped React and Tailwind frontends over PHP and Node backends, including payment APIs and an LMS.","Owned DevOps on AWS — EC2, RDS, S3, IAM, VPC — with monitoring and incident response."]},"upwork":{"role":"Full-Stack Web Developer","type":"Freelance","bullets":["Run full project cycles for international clients: scope, estimate, build, deploy, and handover documentation."]}}},"projects":{"badge":"Selected work","title":"Systems that are still running","desc":"Shipped products, not case-study mockups.","visit":"Visit live site","hint":"Drag or scroll sideways","items":{"tabletap":"Multi-tenant QR ordering platform with owner, cashier, waiter, and kitchen dashboards, split bills, thermal receipts, 15+ SQL migrations, and a bilingual interface.","chatlm":"Embeddable AI chat widget isolated in Shadow DOM. Bring-your-own-key or managed AI through OpenRouter, with Stripe billing, quota metering, and CORS plus API-key hardening.","agentic":"An n8n and DeepSeek pipeline that publishes SEO posts to WordPress over the REST API, running unattended on a VPS with retries and conditional branches. Around 80% faster publishing.","caast":"WordPress and Tutor LMS with custom PHP plugins, a student-notes REST API, a content-developer dashboard, and AI publishing wired through n8n.","clinic":"WhatsApp booking bot built on WAHA and GPT-4o with Google Calendar and Sheets integration, Telegram live-agent escalation, and PDPA-aligned documentation.","dashboard":"Business site with a role-based dashboard using custom post types and ACF, PDF generation, WhatsApp API notifications, and AWS deployment behind a CDN."}},"skills":{"badge":"Stack","title":"What I reach for daily","desc":"Tools I have shipped production work with, not just read about.","groups":{"frontend":"Languages & Frontend","backend":"Backend & Database","cms":"CMS & E-commerce","ai":"AI & Automation","cloud":"Cloud & DevOps","tools":"Tools & Collaboration"}},"certs":{"badge":"Credentials","title":"24 verified certifications","desc":"Every credential below links to its official verification page.","issued":"Issued","expires":"Expires","expired":"Expired","credid":"Credential ID","verify":"Show credential","noverify":"Verification on request","preview":"Open preview","hint":"Tap any credential for the full record","close":"Close","skills":"Skills covered","filters":{"all":"All","ai":"AI & Automation","cloud":"Cloud","web":"Web","security":"Security","language":"Language"},"empty":"No credentials in this category."},"contact":{"badge":"Contact","title":"Tell me what you are building","desc":"Roles, product work, or an automation you want to stop doing by hand — all welcome.","name":"Your name","email":"Email address","msg":"What are you working on?","send":"Send message","sending":"Sending…","ok":"Thank you. Your message is on its way — I usually reply within a day.","err":"Something went wrong. Please email me directly instead.","emailLabel":"Email","phoneLabel":"Phone & WhatsApp","timeLabel":"My local time","directLabel":"Direct channels"},"footer":{"built":"Hand-built with PHP, CSS, and vanilla JavaScript. No frameworks, no page builder.","rights":"All rights reserved.","top":"Back to top"},"ui":{"theme":"Switch theme","lang":"Change language","menu":"Open menu","closeMenu":"Close menu"}},"id":{"meta":{"title":"Muhamad Fikri Haikal — Full-Stack Developer & AI Automation Engineer","desc":"Full-stack developer dan AI automation engineer yang membangun SaaS multi-tenant, alur kerja agentik, dan sistem produksi untuk tim di Jerman, Amerika Serikat, dan Malaysia."},"nav":{"about":"Tentang","work":"Pengalaman","projects":"Karya","skills":"Teknologi","certs":"Sertifikasi","contact":"Kontak"},"hero":{"available":"Terbuka untuk proyek terpilih","roles":["Full-Stack Developer","AI Automation Engineer","Arsitek SaaS","Praktisi Cloud"],"lead":"Saya merancang dan mengirim sistem produksi dari hulu ke hilir — SaaS multi-tenant, pipeline AI agentik, dan infrastruktur cloud yang membuatnya tetap hidup.","cta1":"Mulai proyek","cta2":"Lihat karya","based":"Berbasis di Malaysia · bekerja lintas negara","scroll":"Gulir"},"stats":[{"n":"5+","label":"Tahun berkarya"},{"n":"24","label":"Sertifikat terverifikasi"},{"n":"30+","label":"Proyek selesai"},{"n":"3","label":"Benua dilayani"}],"about":{"badge":"Tentang","title":"Rekayasa yang tahan diuji pengguna nyata","lead":"Saya mengerjakan bagian yang tidak seksi dengan benar: migrasi, hak akses, penagihan, retry, dan log.","p1":"Saya full-stack developer dan AI automation engineer yang bekerja remote bersama tim di Jerman, Amerika Serikat, dan Malaysia. Hari saya terbagi antara mengirim produk yang dipakai klien dan merangkai automasi yang menghapus langkah manual di belakangnya.","p2":"Sebagian besar pekerjaan terbaru saya bersifat multi-tenant: satu basis kode, data terisolasi, dasbor sesuai peran. Saya peduli pada jaminan yang membosankan — bahwa split bill tetap seimbang, webhook mengulang saat gagal, dan satu tenant tidak pernah bisa membaca baris tenant lain.","cards":[{"icon":"layers","title":"Multi-tenant sejak awal","text":"Isolasi tingkat baris, dasbor berbasis peran, dan disiplin migrasi sejak commit pertama."},{"icon":"circuit","title":"Automasi yang bertahan","text":"Pipeline n8n, Make, dan LLM dengan retry, kondisional, dan observabilitas — bukan demo jalur mulus."},{"icon":"cloud","title":"Pegang infrastrukturnya","text":"Deployment AWS dan GCP lengkap dengan monitoring, respons insiden, dan distribusi lewat CDN."}]},"work":{"badge":"Pengalaman","title":"Peran di tiga benua, satu disiplin teknis","desc":"Peta jalan tim yang saya bangun bersama dan tanggung jawab saya di masing-masing.","present":"Sekarang","jobs":{"growmodo":{"role":"Senior Full-Stack Developer & AI Expert","type":"Penuh waktu","bullets":["Membangun situs klien berperforma tinggi di WordPress, Shopify, dan Webflow dengan plugin serta tema kustom.","Mengirim integrasi REST dan GraphQL yang disetel untuk skala, keamanan, dan Core Web Vitals.","Menerapkan AI di pengembangan, QA, dan dokumentasi untuk tim yang tersebar."]},"gedex":{"role":"Spesialis Full-Stack, Automasi AI & API","type":"Paruh waktu","bullets":["Memegang plugin WordPress kustom, REST API, dan antarmuka Elementor untuk produk CaasEdu.","Merancang pipeline n8n, Make, dan LLM ujung ke ujung untuk konten AI dan publikasi multi-platform.","Membangun alur Google Apps Script yang mengubah data Sheets menjadi CSV publikasi otomatis."]},"aigents":{"role":"Spesialis AI Agentik & Automasi","type":"Paruh waktu","bullets":["Menjalankan alur kerja agentik yang menghubungkan API AI, webhook, dan perkakas no-code.","Merawat situs WordPress dan Elementor di AWS EC2 sekaligus mengotomasi proses manual."]},"jomsite":{"role":"Fullstack Web Engineer","type":"Paruh waktu","bullets":["Melanjutkan pengiriman produk web full-stack secara remote dari Kangar, Perlis, mencakup Microsoft Azure, Zapier, dan stack delivery yang lebih luas.","Memegang frontend React dan Tailwind di atas backend PHP dan Node, termasuk API pembayaran dan fitur LMS.","Menjaga operasi cloud di Azure dan AWS dengan monitoring, automasi, dan respons insiden."]},"jomsiteft":{"role":"Full-stack Web Engineer","type":"Penuh waktu","bullets":["Membangun dan merawat produk web klien dari ujung ke ujung dalam setup hybrid di Malaysia selama tiga tahun.","Mengirim frontend React dan Tailwind di atas backend PHP dan Node, termasuk API pembayaran dan LMS.","Memegang DevOps di AWS — EC2, RDS, S3, IAM, VPC — dengan monitoring dan respons insiden."]},"upwork":{"role":"Full-Stack Web Developer","type":"Freelance","bullets":["Menjalankan siklus proyek penuh untuk klien internasional: lingkup, estimasi, bangun, deploy, dan dokumentasi serah terima."]}}},"projects":{"badge":"Karya pilihan","title":"Sistem yang sampai kini masih jalan","desc":"Produk yang benar-benar dikirim, bukan mockup studi kasus.","visit":"Kunjungi situsnya","hint":"Geser atau gulir ke samping","items":{"tabletap":"Platform pemesanan via QR multi-tenant dengan dasbor pemilik, kasir, pelayan, dan dapur, split bill, struk termal, 15+ migrasi SQL, dan antarmuka dua bahasa.","chatlm":"Widget chat AI yang bisa disematkan dan terisolasi di Shadow DOM. Pakai kunci sendiri atau AI terkelola via OpenRouter, dengan penagihan Stripe, pengukuran kuota, serta pengerasan CORS dan API key.","agentic":"Pipeline n8n dan DeepSeek yang menerbitkan artikel SEO ke WordPress lewat REST API, berjalan tanpa pengawasan di VPS dengan retry dan percabangan kondisional. Publikasi sekitar 80% lebih cepat.","caast":"WordPress dan Tutor LMS dengan plugin PHP kustom, REST API catatan siswa, dasbor content developer, dan publikasi AI yang dirangkai lewat n8n.","clinic":"Bot pemesanan WhatsApp berbasis WAHA dan GPT-4o dengan integrasi Google Calendar dan Sheets, eskalasi agen langsung via Telegram, serta dokumentasi selaras PDPA.","dashboard":"Situs bisnis dengan dasbor berbasis peran memakai custom post type dan ACF, pembuatan PDF, notifikasi WhatsApp API, dan deployment AWS di belakang CDN."}},"skills":{"badge":"Teknologi","title":"Yang saya pakai setiap hari","desc":"Perkakas yang sudah saya pakai di produksi, bukan sekadar saya baca.","groups":{"frontend":"Bahasa & Frontend","backend":"Backend & Basis Data","cms":"CMS & E-commerce","ai":"AI & Automasi","cloud":"Cloud & DevOps","tools":"Perkakas & Kolaborasi"}},"certs":{"badge":"Sertifikasi","title":"24 sertifikat terverifikasi","desc":"Setiap sertifikat di bawah tertaut ke halaman verifikasi resminya.","issued":"Diterbitkan","expires":"Berlaku hingga","expired":"Kedaluwarsa","credid":"ID Sertifikat","verify":"Lihat sertifikat","noverify":"Verifikasi atas permintaan","preview":"Buka pratinjau","hint":"Ketuk sertifikat untuk catatan lengkapnya","close":"Tutup","skills":"Keahlian tercakup","filters":{"all":"Semua","ai":"AI & Automasi","cloud":"Cloud","web":"Web","security":"Keamanan","language":"Bahasa"},"empty":"Belum ada sertifikat di kategori ini."},"contact":{"badge":"Kontak","title":"Ceritakan apa yang sedang Anda bangun","desc":"Tawaran peran, pekerjaan produk, atau automasi yang ingin Anda hentikan secara manual — semuanya diterima.","name":"Nama Anda","email":"Alamat email","msg":"Sedang mengerjakan apa?","send":"Kirim pesan","sending":"Mengirim…","ok":"Terima kasih. Pesan Anda sudah terkirim — biasanya saya balas dalam sehari.","err":"Ada yang bermasalah. Silakan email saya langsung.","emailLabel":"Email","phoneLabel":"Telepon & WhatsApp","timeLabel":"Waktu lokal saya","directLabel":"Kanal langsung"},"footer":{"built":"Dibuat manual dengan PHP, CSS, dan JavaScript murni. Tanpa framework, tanpa page builder.","rights":"Seluruh hak cipta dilindungi.","top":"Kembali ke atas"},"ui":{"theme":"Ganti tema","lang":"Ganti bahasa","menu":"Buka menu","closeMenu":"Tutup menu"}},"ja":{"meta":{"title":"Muhamad Fikri Haikal — フルスタック開発者 / AI 自動化エンジニア","desc":"マルチテナント SaaS、エージェント型ワークフロー、本番システムを構築するフルスタック開発者・AI 自動化エンジニア。ドイツ、アメリカ、マレーシアのチームと協働。"},"nav":{"about":"概要","work":"経歴","projects":"制作","skills":"技術","certs":"資格","contact":"連絡"},"hero":{"available":"選定案件を受付中","roles":["フルスタック開発者","AI 自動化エンジニア","SaaS アーキテクト","クラウド実務者"],"lead":"設計から運用まで一貫して本番システムを届けます。マルチテナント SaaS、エージェント型 AI パイプライン、そしてそれを支えるクラウド基盤まで。","cta1":"プロジェクトを始める","cta2":"制作を見る","based":"拠点はマレーシア · 世界中で稼働","scroll":"スクロール"},"stats":[{"n":"5+","label":"実務年数"},{"n":"24","label":"認定資格"},{"n":"30+","label":"納品案件"},{"n":"3","label":"対応大陸"}],"about":{"badge":"概要","title":"実ユーザーに触れても壊れない設計","lead":"地味な部分を丁寧に作ります。マイグレーション、権限、課金、リトライ、ログ。","p1":"ドイツ、アメリカ、マレーシアのチームとリモートで働くフルスタック開発者・AI 自動化エンジニアです。日々の仕事は、クライアント向けプロダクトの実装と、その裏側で手作業をなくす自動化の構築に分かれています。","p2":"最近の案件はほとんどがマルチテナントです。コードベースは共有、データは分離、ダッシュボードは権限に応じて変化します。私が重視するのは退屈な保証です。割り勘の会計が合うこと、Webhook が再試行されること、そしてあるテナントが他テナントの行を絶対に読めないこと。","cards":[{"icon":"layers","title":"最初からマルチテナント","text":"行レベルの分離、権限別ダッシュボード、初回コミットからのマイグレーション規律。"},{"icon":"circuit","title":"壊れない自動化","text":"リトライ、条件分岐、可観測性を備えた n8n・Make・LLM パイプライン。ハッピーパスのデモではありません。"},{"icon":"cloud","title":"インフラも自分で持つ","text":"監視、障害対応、CDN 配信まで含めた AWS と GCP のデプロイ。"}]},"work":{"badge":"経歴","title":"複数の役割、3 大陸、1 つの技術規律","desc":"協働しているチームと、それぞれで担う責任のロードマップ。","present":"現在","jobs":{"growmodo":{"role":"シニアフルスタック開発者 / AI エキスパート","type":"正社員","bullets":["WordPress・Shopify・Webflow 上で、独自プラグインとテーマを用いた高性能なクライアントサイトを構築。","スケール、セキュリティ、Core Web Vitals に合わせて調整した REST / GraphQL 連携を提供。","分散チームの開発・QA・ドキュメント全体に AI を適用。"]},"gedex":{"role":"フルスタック / AI 自動化 / API スペシャリスト","type":"業務委託","bullets":["CaasEdu 製品向けの独自 WordPress プラグイン、REST API、Elementor UI を担当。","AI コンテンツと複数プラットフォーム配信のための n8n・Make・LLM パイプラインを一貫設計。","Sheets のデータを配信用 CSV に変換する Google Apps Script フローを構築。"]},"aigents":{"role":"エージェント型 AI / 自動化スペシャリスト","type":"業務委託","bullets":["AI API、Webhook、ノーコードツールをつなぐエージェント型ワークフローを運用。","AWS EC2 上の WordPress / Elementor サイトを保守しつつ手作業を自動化。"]},"jomsite":{"role":"フルスタック Web エンジニア","type":"業務委託","bullets":["ペルリス州カンガーからリモートでフルスタック製品を継続提供。Microsoft Azure、Zapier、広いデリバリー・スタックを担当。","決済 API や LMS 機能を含む PHP / Node バックエンド上に React と Tailwind のフロントエンドを実装。","Azure と AWS のクラウド運用を監視・自動化・障害対応まで含めて維持。"]},"jomsiteft":{"role":"フルスタック Web エンジニア","type":"正社員","bullets":["マレーシアのハイブリッド体制で、3 年にわたりクライアント向け Web 製品を一貫して構築・運用。","決済 API や LMS を含む PHP / Node バックエンド上に React と Tailwind のフロントエンドを実装。","AWS の DevOps（EC2、RDS、S3、IAM、VPC）を監視・障害対応まで含めて担当。"]},"upwork":{"role":"フルスタック Web 開発者","type":"フリーランス","bullets":["海外クライアント向けに要件定義から見積、開発、デプロイ、引き継ぎ資料まで一貫対応。"]}}},"projects":{"badge":"主な制作","title":"今も動き続けているシステム","desc":"ケーススタディのモックではなく、実際に納品したプロダクト。","visit":"サイトを見る","hint":"横にドラッグまたはスクロール","items":{"tabletap":"オーナー、レジ、ホール、キッチン向けダッシュボード、割り勘、サーマルレシート、15 以上の SQL マイグレーション、二言語 UI を備えたマルチテナント QR 注文プラットフォーム。","chatlm":"Shadow DOM で隔離した埋め込み型 AI チャットウィジェット。OpenRouter 経由の自前キーまたはマネージド AI に対応し、Stripe 課金、クォータ計測、CORS と API キーの堅牢化を実装。","agentic":"REST API 経由で WordPress に SEO 記事を公開する n8n と DeepSeek のパイプライン。リトライと条件分岐を備え VPS 上で無人稼働し、公開作業を約 80% 高速化。","caast":"独自 PHP プラグイン、学生ノート REST API、コンテンツ制作者向けダッシュボード、n8n 経由の AI 公開機能を備えた WordPress + Tutor LMS。","clinic":"WAHA と GPT-4o による WhatsApp 予約ボット。Google Calendar / Sheets 連携、Telegram での有人エスカレーション、PDPA 準拠のドキュメントを整備。","dashboard":"カスタム投稿タイプと ACF による権限別ダッシュボード、PDF 生成、WhatsApp API 通知、CDN 配下の AWS デプロイを備えた企業サイト。"}},"skills":{"badge":"技術","title":"日常的に使う道具","desc":"読んだだけでなく、本番で使い込んだツール。","groups":{"frontend":"言語 & フロントエンド","backend":"バックエンド & データベース","cms":"CMS & EC","ai":"AI & 自動化","cloud":"クラウド & DevOps","tools":"ツール & 協働"}},"certs":{"badge":"資格","title":"24 件の認定資格","desc":"以下のすべての資格が公式の検証ページにリンクしています。","issued":"取得","expires":"有効期限","expired":"期限切れ","credid":"資格 ID","verify":"資格を表示","noverify":"検証は要請次第","preview":"プレビューを開く","hint":"資格をタップすると詳細が開きます","close":"閉じる","skills":"対象スキル","filters":{"all":"すべて","ai":"AI & 自動化","cloud":"クラウド","web":"Web","security":"セキュリティ","language":"語学"},"empty":"このカテゴリの資格はありません。"},"contact":{"badge":"連絡","title":"構想を聞かせてください","desc":"採用のご相談、プロダクト開発、手作業をやめたい自動化 — どれでも歓迎します。","name":"お名前","email":"メールアドレス","msg":"今どんなことに取り組んでいますか？","send":"メッセージを送る","sending":"送信中…","ok":"ありがとうございます。メッセージを送信しました。通常 1 日以内に返信します。","err":"問題が発生しました。お手数ですが直接メールをお送りください。","emailLabel":"メール","phoneLabel":"電話 & WhatsApp","timeLabel":"現地時間","directLabel":"直接の連絡先"},"footer":{"built":"PHP、CSS、素の JavaScript で手作り。フレームワークもページビルダーも使っていません。","rights":"All rights reserved.","top":"トップへ戻る"},"ui":{"theme":"テーマ切替","lang":"言語を変更","menu":"メニューを開く","closeMenu":"メニューを閉じる"}},"ar":{"meta":{"title":"محمد فكري هيكل — مطوّر full-stack ومهندس أتمتة بالذكاء الاصطناعي","desc":"مطوّر full-stack ومهندس أتمتة بالذكاء الاصطناعي يبني أنظمة SaaS متعددة المستأجرين وسلاسل عمل ذاتية وأنظمة إنتاج لفرق في ألمانيا والولايات المتحدة وماليزيا."},"nav":{"about":"نبذة","work":"الخبرة","projects":"الأعمال","skills":"التقنيات","certs":"الشهادات","contact":"تواصل"},"hero":{"available":"متاح لمشاريع مختارة","roles":["مطوّر Full-Stack","مهندس أتمتة بالذكاء الاصطناعي","مهندس معماري لأنظمة SaaS","ممارس للحوسبة السحابية"],"lead":"أصمّم أنظمة الإنتاج وأطلقها من البداية إلى النهاية — أنظمة SaaS متعددة المستأجرين، وسلاسل ذكاء اصطناعي ذاتية، والبنية السحابية التي تُبقيها تعمل.","cta1":"ابدأ مشروعًا","cta2":"شاهد الأعمال","based":"مقيم في ماليزيا · أعمل حول العالم","scroll":"انزل"},"stats":[{"n":"+5","label":"سنوات من العمل"},{"n":"24","label":"شهادة موثّقة"},{"n":"+30","label":"مشروعًا مُنجزًا"},{"n":"3","label":"قارات مخدومة"}],"about":{"badge":"نبذة","title":"هندسة تصمد أمام المستخدم الحقيقي","lead":"أُتقن الأجزاء غير اللامعة: الترحيلات، والصلاحيات، والفواتير، وإعادة المحاولة، والسجلات.","p1":"أنا مطوّر full-stack ومهندس أتمتة بالذكاء الاصطناعي أعمل عن بُعد مع فرق في ألمانيا والولايات المتحدة وماليزيا. ينقسم يومي بين إطلاق منتجات يستخدمها العملاء، وبناء الأتمتة التي تُلغي الخطوات اليدوية خلفها.","p2":"معظم أعمالي الأخيرة متعددة المستأجرين: قاعدة كود واحدة، وبيانات معزولة، ولوحات تحكّم تتبع الأدوار. يهمّني ما يبدو مملًا: أن تتوازن الفاتورة المقسومة، وأن يُعيد الـ webhook المحاولة، وألّا يقرأ مستأجر صفوف مستأجر آخر أبدًا.","cards":[{"icon":"layers","title":"متعدد المستأجرين من البداية","text":"عزل على مستوى الصفوف، ولوحات حسب الدور، والتزام بالترحيلات من أول commit."},{"icon":"circuit","title":"أتمتة تصمد","text":"سلاسل n8n وMake وLLM مع إعادة المحاولة والتشعّب وقابلية المراقبة — لا عروض للمسار المثالي فقط."},{"icon":"cloud","title":"أتولّى البنية التحتية","text":"نشر على AWS وGCP مع المراقبة والاستجابة للحوادث والتوزيع عبر CDN."}]},"work":{"badge":"الخبرة","title":"أدوار عبر ثلاث قارات، وانضباط تقني واحد","desc":"خريطة للفرق التي أبني معها وما أتولّاه في كل منها.","present":"حتى الآن","jobs":{"growmodo":{"role":"مطوّر full-stack أول وخبير ذكاء اصطناعي","type":"دوام كامل","bullets":["بناء مواقع عملاء عالية الأداء على WordPress وShopify وWebflow بإضافات وقوالب مخصّصة.","تسليم تكاملات REST وGraphQL مضبوطة للتوسّع والأمان وCore Web Vitals.","تطبيق الذكاء الاصطناعي في التطوير وضمان الجودة والتوثيق لفريق موزّع."]},"gedex":{"role":"أخصائي full-stack وأتمتة ذكاء اصطناعي وواجهات API","type":"دوام جزئي","bullets":["تولّي إضافات WordPress المخصّصة وواجهات REST وواجهات Elementor لمنتجات CaasEdu.","تصميم سلاسل n8n وMake وLLM كاملة لمحتوى الذكاء الاصطناعي والنشر على منصات متعددة.","بناء تدفّقات Google Apps Script تحوّل بيانات Sheets إلى ملفات CSV للنشر الآلي."]},"aigents":{"role":"أخصائي ذكاء اصطناعي ذاتي وأتمتة","type":"دوام جزئي","bullets":["تشغيل سلاسل عمل ذاتية تربط واجهات الذكاء الاصطناعي وwebhooks وأدوات no-code.","صيانة مواقع WordPress وElementor على AWS EC2 مع أتمتة العمليات اليدوية."]},"jomsite":{"role":"مهندس ويب fullstack","type":"دوام جزئي","bullets":["مواصلة تسليم منتجات ويب متكاملة عن بُعد من كانجار، برليس، مع Microsoft Azure وZapier ومكدس التسليم الأوسع.","تولّي واجهات React وTailwind على خدمات PHP وNode، بما فيها واجهات الدفع وميزات LMS.","الحفاظ على تشغيل السحابة عبر Azure وAWS مع المراقبة والأتمتة والاستجابة للحوادث."]},"jomsiteft":{"role":"مهندس ويب full-stack","type":"دوام كامل","bullets":["بناء وصيانة منتجات ويب للعملاء من طرف إلى طرف في إعداد هجين بماليزيا لمدة ثلاث سنوات.","تسليم واجهات React وTailwind على خدمات PHP وNode، بما فيها واجهات الدفع ونظام إدارة تعلّم.","تولّي DevOps على AWS — EC2 وRDS وS3 وIAM وVPC — مع المراقبة والاستجابة للحوادث."]},"upwork":{"role":"مطوّر ويب full-stack","type":"عمل حر","bullets":["إدارة دورات مشاريع كاملة لعملاء دوليين: النطاق والتقدير والبناء والنشر ووثائق التسليم."]}}},"projects":{"badge":"أعمال مختارة","title":"أنظمة لا تزال تعمل","desc":"منتجات مُطلقة فعلًا، لا نماذج لدراسات حالة.","visit":"زيارة الموقع","hint":"اسحب أو مرّر جانبيًا","items":{"tabletap":"منصة طلبات عبر QR متعددة المستأجرين، بلوحات للمالك والكاشير والنادل والمطبخ، وتقسيم الفواتير، وإيصالات حرارية، وأكثر من 15 ترحيل SQL، وواجهة بلغتين.","chatlm":"أداة محادثة ذكاء اصطناعي قابلة للتضمين ومعزولة في Shadow DOM. تدعم مفتاحك الخاص أو ذكاءً مُدارًا عبر OpenRouter، مع فواتير Stripe وقياس الحصص وتحصين CORS ومفاتيح API.","agentic":"سلسلة n8n وDeepSeek تنشر مقالات SEO إلى WordPress عبر REST API، تعمل دون إشراف على VPS مع إعادة المحاولة والتشعّب الشرطي. نشر أسرع بنحو 80%.","caast":"WordPress وTutor LMS مع إضافات PHP مخصّصة، وواجهة REST لملاحظات الطلاب، ولوحة لمطوّري المحتوى، ونشر بالذكاء الاصطناعي عبر n8n.","clinic":"بوت حجز على WhatsApp مبني على WAHA وGPT-4o مع تكامل Google Calendar وSheets، وتحويل إلى موظف حقيقي عبر Telegram، وتوثيق متوافق مع PDPA.","dashboard":"موقع أعمال بلوحة تحكّم حسب الدور تستخدم أنواع منشورات مخصّصة وACF، وتوليد PDF، وإشعارات WhatsApp API، ونشر على AWS خلف CDN."}},"skills":{"badge":"التقنيات","title":"ما أستخدمه يوميًا","desc":"أدوات أطلقت بها أعمالًا حقيقية، لا مجرد قراءة عنها.","groups":{"frontend":"اللغات والواجهة الأمامية","backend":"الخلفية وقواعد البيانات","cms":"أنظمة المحتوى والتجارة","ai":"الذكاء الاصطناعي والأتمتة","cloud":"السحابة وDevOps","tools":"الأدوات والتعاون"}},"certs":{"badge":"الشهادات","title":"24 شهادة موثّقة","desc":"كل شهادة أدناه مرتبطة بصفحة التحقّق الرسمية الخاصة بها.","issued":"تاريخ الإصدار","expires":"تنتهي في","expired":"منتهية","credid":"معرّف الشهادة","verify":"إظهار الشهادة","noverify":"التحقّق عند الطلب","preview":"فتح المعاينة","hint":"اضغط أي شهادة لعرض تفاصيلها الكاملة","close":"إغلاق","skills":"المهارات المشمولة","filters":{"all":"الكل","ai":"الذكاء الاصطناعي","cloud":"السحابة","web":"الويب","security":"الأمن","language":"اللغات"},"empty":"لا توجد شهادات في هذه الفئة."},"contact":{"badge":"تواصل","title":"أخبرني بما تبنيه","desc":"وظيفة، أو عمل على منتج، أو أتمتة تريد التوقّف عن تنفيذها يدويًا — كلها مرحّب بها.","name":"اسمك","email":"البريد الإلكتروني","msg":"على ماذا تعمل حاليًا؟","send":"إرسال الرسالة","sending":"جارٍ الإرسال…","ok":"شكرًا لك. رسالتك في طريقها إليّ — أردّ عادةً في غضون يوم.","err":"حدث خطأ ما. راسلني على البريد مباشرةً من فضلك.","emailLabel":"البريد الإلكتروني","phoneLabel":"الهاتف وواتساب","timeLabel":"توقيتي المحلي","directLabel":"قنوات مباشرة"},"footer":{"built":"مبني يدويًا بـ PHP وCSS وJavaScript خالص. بلا أطر عمل وبلا page builder.","rights":"جميع الحقوق محفوظة.","top":"إلى الأعلى"},"ui":{"theme":"تغيير المظهر","lang":"تغيير اللغة","menu":"فتح القائمة","closeMenu":"إغلاق القائمة"}},"de":{"meta":{"title":"Muhamad Fikri Haikal — Full-Stack-Entwickler & KI-Automatisierungs-Engineer","desc":"Full-Stack-Entwickler und KI-Automatisierungs-Engineer für mandantenfähige SaaS-Produkte, agentische Workflows und Produktionssysteme — für Teams in Deutschland, den USA und Malaysia."},"nav":{"about":"Über mich","work":"Erfahrung","projects":"Arbeiten","skills":"Stack","certs":"Zertifikate","contact":"Kontakt"},"hero":{"available":"Verfügbar für ausgewählte Projekte","roles":["Full-Stack-Entwickler","KI-Automatisierungs-Engineer","SaaS-Architekt","Cloud-Praktiker"],"lead":"Ich entwerfe und liefere Produktionssysteme von Anfang bis Ende — mandantenfähige SaaS-Produkte, agentische KI-Pipelines und die Cloud-Infrastruktur, die sie am Laufen hält.","cta1":"Projekt starten","cta2":"Arbeiten ansehen","based":"Basis in Malaysia · weltweit tätig","scroll":"Scrollen"},"stats":[{"n":"5+","label":"Jahre im Einsatz"},{"n":"24","label":"Verifizierte Zertifikate"},{"n":"30+","label":"Gelieferte Projekte"},{"n":"3","label":"Bediente Kontinente"}],"about":{"badge":"Über mich","title":"Technik, die den Kontakt mit echten Nutzern übersteht","lead":"Ich baue die unglamourösen Teile richtig: Migrationen, Berechtigungen, Abrechnung, Retries und Logs.","p1":"Ich bin Full-Stack-Entwickler und KI-Automatisierungs-Engineer und arbeite remote mit Teams in Deutschland, den USA und Malaysia. Mein Tag teilt sich zwischen kundenseitiger Produktarbeit und der Automatisierung, die die manuellen Schritte dahinter entfernt.","p2":"Die meisten meiner aktuellen Projekte sind mandantenfähig: geteilte Codebasis, isolierte Daten, rollenbewusste Dashboards. Mir sind die langweiligen Garantien wichtig — dass eine geteilte Rechnung aufgeht, ein Webhook erneut versucht wird und ein Mandant nie die Datensätze eines anderen lesen kann.","cards":[{"icon":"layers","title":"Mandantenfähig von Anfang an","text":"Isolation auf Zeilenebene, rollenbasierte Dashboards und Migrationsdisziplin ab dem ersten Commit."},{"icon":"circuit","title":"Automatisierung, die hält","text":"n8n-, Make- und LLM-Pipelines mit Retries, Verzweigungen und Observability — keine Happy-Path-Demos."},{"icon":"cloud","title":"Infrastruktur inklusive","text":"AWS- und GCP-Deployments mit Monitoring, Incident Response und CDN-gestützter Auslieferung."}]},"work":{"badge":"Erfahrung","title":"Rollen über drei Kontinente, eine technische Disziplin","desc":"Eine Roadmap der Teams, mit denen ich baue, und meiner Verantwortung darin.","present":"Heute","jobs":{"growmodo":{"role":"Senior Full-Stack-Entwickler & KI-Experte","type":"Vollzeit","bullets":["Performante Kundenseiten auf WordPress, Shopify und Webflow mit eigenen Plugins und Themes.","REST- und GraphQL-Integrationen, abgestimmt auf Skalierung, Sicherheit und Core Web Vitals.","KI-Einsatz in Entwicklung, QA und Dokumentation für ein verteiltes Delivery-Team."]},"gedex":{"role":"Full-Stack-, KI-Automatisierungs- & API-Spezialist","type":"Teilzeit","bullets":["Verantwortung für eigene WordPress-Plugins, REST-APIs und Elementor-Oberflächen der CaasEdu-Produkte.","Ende-zu-Ende-Pipelines mit n8n, Make und LLMs für KI-Inhalte und Multi-Plattform-Publishing.","Google-Apps-Script-Flows, die Sheets-Daten in automatisierte Publishing-CSVs überführen."]},"aigents":{"role":"Spezialist für agentische KI & Automatisierung","type":"Teilzeit","bullets":["Agentische Workflows im Betrieb, die KI-APIs, Webhooks und No-Code-Tools verbinden.","Betreuung von WordPress- und Elementor-Seiten auf AWS EC2 samt Automatisierung manueller Abläufe."]},"jomsite":{"role":"Fullstack Web Engineer","type":"Teilzeit","bullets":["Weiterhin Full-Stack-Webprodukte remote aus Kangar, Perlis — mit Microsoft Azure, Zapier und dem breiteren Delivery-Stack.","React- und Tailwind-Frontends auf PHP- und Node-Backends, inklusive Zahlungs-APIs und LMS-Features.","Cloud-Betrieb auf Azure und AWS mit Monitoring, Automatisierung und Incident Response."]},"jomsiteft":{"role":"Full-stack Web Engineer","type":"Vollzeit","bullets":["Drei Jahre hybride Arbeit in Malaysia: Kunden-Webprodukte end-to-end gebaut und betrieben.","React- und Tailwind-Frontends auf PHP- und Node-Backends, inklusive Zahlungs-APIs und LMS.","DevOps auf AWS — EC2, RDS, S3, IAM, VPC — mit Monitoring und Incident Response."]},"upwork":{"role":"Full-Stack-Web-Entwickler","type":"Freelance","bullets":["Vollständige Projektzyklen für internationale Kunden: Scope, Schätzung, Umsetzung, Deployment und Übergabedokumentation."]}}},"projects":{"badge":"Ausgewählte Arbeiten","title":"Systeme, die noch laufen","desc":"Ausgelieferte Produkte, keine Case-Study-Mockups.","visit":"Live-Seite besuchen","hint":"Seitwärts ziehen oder scrollen","items":{"tabletap":"Mandantenfähige QR-Bestellplattform mit Dashboards für Inhaber, Kasse, Service und Küche, geteilten Rechnungen, Thermobelegen, über 15 SQL-Migrationen und zweisprachiger Oberfläche.","chatlm":"Einbettbares KI-Chat-Widget, isoliert im Shadow DOM. Eigener Key oder Managed AI über OpenRouter, mit Stripe-Abrechnung, Quota-Messung sowie CORS- und API-Key-Härtung.","agentic":"Eine n8n- und DeepSeek-Pipeline, die SEO-Beiträge über die REST-API in WordPress veröffentlicht — unbeaufsichtigt auf einem VPS, mit Retries und bedingten Zweigen. Rund 80 % schnelleres Publishing.","caast":"WordPress und Tutor LMS mit eigenen PHP-Plugins, einer REST-API für Studierendennotizen, einem Content-Developer-Dashboard und KI-Publishing über n8n.","clinic":"WhatsApp-Buchungsbot auf Basis von WAHA und GPT-4o mit Google-Calendar- und Sheets-Anbindung, Telegram-Eskalation an echte Agents und PDPA-konformer Dokumentation.","dashboard":"Unternehmensseite mit rollenbasiertem Dashboard über Custom Post Types und ACF, PDF-Erzeugung, WhatsApp-API-Benachrichtigungen und AWS-Deployment hinter einem CDN."}},"skills":{"badge":"Stack","title":"Womit ich täglich arbeite","desc":"Werkzeuge, mit denen ich produktiv ausgeliefert habe — nicht nur darüber gelesen.","groups":{"frontend":"Sprachen & Frontend","backend":"Backend & Datenbank","cms":"CMS & E-Commerce","ai":"KI & Automatisierung","cloud":"Cloud & DevOps","tools":"Tools & Zusammenarbeit"}},"certs":{"badge":"Zertifikate","title":"24 verifizierte Zertifizierungen","desc":"Jedes Zertifikat unten verlinkt auf seine offizielle Verifizierungsseite.","issued":"Ausgestellt","expires":"Gültig bis","expired":"Abgelaufen","credid":"Zertifikats-ID","verify":"Zertifikat anzeigen","noverify":"Verifizierung auf Anfrage","preview":"Vorschau öffnen","hint":"Zertifikat antippen für den vollständigen Eintrag","close":"Schließen","skills":"Abgedeckte Fähigkeiten","filters":{"all":"Alle","ai":"KI & Automatisierung","cloud":"Cloud","web":"Web","security":"Security","language":"Sprachen"},"empty":"Keine Zertifikate in dieser Kategorie."},"contact":{"badge":"Kontakt","title":"Erzähl mir, was du baust","desc":"Rollen, Produktarbeit oder eine Automatisierung, die du nicht länger von Hand machen willst — alles willkommen.","name":"Ihr Name","email":"E-Mail-Adresse","msg":"Woran arbeiten Sie gerade?","send":"Nachricht senden","sending":"Senden…","ok":"Danke. Ihre Nachricht ist unterwegs — ich antworte meist innerhalb eines Tages.","err":"Etwas ist schiefgelaufen. Schreiben Sie mir bitte direkt eine E-Mail.","emailLabel":"E-Mail","phoneLabel":"Telefon & WhatsApp","timeLabel":"Meine Ortszeit","directLabel":"Direkte Kanäle"},"footer":{"built":"Handgebaut mit PHP, CSS und reinem JavaScript. Keine Frameworks, kein Page-Builder.","rights":"Alle Rechte vorbehalten.","top":"Nach oben"},"ui":{"theme":"Theme wechseln","lang":"Sprache ändern","menu":"Menü öffnen","closeMenu":"Menü schließen"}}};
+  window.FH_DATA = {
+    locales: {"en":{"label":"English","native":"English","dir":"ltr","tag":"en"},"id":{"label":"Indonesian","native":"Indonesia","dir":"ltr","tag":"id"},"ja":{"label":"Japanese","native":"日本語","dir":"ltr","tag":"ja"},"ar":{"label":"Arabic","native":"العربية","dir":"rtl","tag":"ar"},"de":{"label":"German","native":"Deutsch","dir":"ltr","tag":"de"}},
+    certs: [{"slug":"claude-code-101","name":"Certificate of Completion: Claude Code 101","issuer":"Anthropic","issued":"Aug 2026","expires":null,"credential":"dqjtmu5gbzwn","verify":"https://verify.skilljar.com/c/dqjtmu5gbzwn","group":"ai","skills":["AI-assisted development","Prompt engineering","Claude Code"],"logo":"assets/certs/logos/anthropic.png","preview":"assets/certs/claude-code-101.jpg","art":"<img src=\"assets/certs/claude-code-101.jpg\" alt=\"Certificate of Completion: Claude Code 101\" loading=\"lazy\" decoding=\"async\">"},{"slug":"gcp-mlops-genai","name":"Machine Learning Operations (MLOps) for Generative AI","issuer":"Google Cloud Skills Boost","issued":"Oct 2025","expires":null,"credential":"18854828","verify":"https://www.cloudskillsboost.google/public_profiles/01b20a7d-63c5-4952-aa71-42b44e7084e6/badges/18854828","group":"ai","skills":["MLOps","Vertex AI","Generative AI"],"logo":"assets/certs/logos/gcp.png","preview":null,"art":"<svg class=\"cert-art\" viewBox=\"0 0 320 200\" preserveAspectRatio=\"xMidYMid slice\" role=\"img\" aria-label=\"Machine Learning Operations (MLOps) for Gener…\">\n  <defs>\n    <linearGradient id=\"cw4138905688g\" gradientTransform=\"rotate(43 .5 .5)\">\n      <stop offset=\"0\" stop-color=\"#4285f4\" stop-opacity=\".85\"/>\n      <stop offset=\"1\" stop-color=\"#4285f4\" stop-opacity=\".22\"/>\n    </linearGradient>\n    <radialGradient id=\"cw4138905688r\" cx=\"18%\" cy=\"14%\" r=\"78%\">\n      <stop offset=\"0\" stop-color=\"#fff\" stop-opacity=\".45\"/>\n      <stop offset=\"1\" stop-color=\"#fff\" stop-opacity=\"0\"/>\n    </radialGradient>\n  </defs>\n  <rect width=\"320\" height=\"200\" fill=\"url(#cw4138905688g)\"/>\n  <rect width=\"320\" height=\"200\" fill=\"url(#cw4138905688r)\"/>\n  <g fill=\"none\" stroke=\"#fff\" stroke-opacity=\".22\" stroke-width=\"1\">\n    <circle cx=\"272\" cy=\"42\" r=\"54\"/><circle cx=\"272\" cy=\"42\" r=\"34\"/><circle cx=\"40\" cy=\"172\" r=\"46\"/>\n  </g>\n  <text x=\"24\" y=\"52\" font-family=\"Space Grotesk, Inter, sans-serif\" font-size=\"26\" font-weight=\"700\" fill=\"#fff\" fill-opacity=\".92\">GC</text>\n  <text x=\"24\" y=\"126\" font-family=\"Inter, sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#fff\" fill-opacity=\".95\">Machine Learning Operations (MLOps) for Gener…</text>\n  <text x=\"24\" y=\"150\" font-family=\"Inter, sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#fff\" fill-opacity=\".7\">Google Cloud Skills Boost</text>\n</svg>"},{"slug":"make-advanced","name":"Make Advanced","issuer":"Make","issued":"Sep 2025","expires":null,"credential":null,"verify":"https://www.credly.com/badges/88291e3b-aaa9-4202-9481-0aa8fb52545b/linked_in_profile","group":"ai","skills":["JSON","Scenario design","Error handling","Webhooks"],"logo":"assets/certs/logos/make.png","preview":"assets/certs/make-advanced.jpg","art":"<img src=\"assets/certs/make-advanced.jpg\" alt=\"Make Advanced\" loading=\"lazy\" decoding=\"async\">"},{"slug":"make-intermediate","name":"Make Intermediate","issuer":"Make","issued":"Sep 2025","expires":null,"credential":null,"verify":"https://www.credly.com/badges/1155e679-81aa-4877-80d8-42d2351db90c/linked_in_profile","group":"ai","skills":["JSON","Data mapping","Iterators"],"logo":"assets/certs/logos/make.png","preview":"assets/certs/make-intermediate.jpg","art":"<img src=\"assets/certs/make-intermediate.jpg\" alt=\"Make Intermediate\" loading=\"lazy\" decoding=\"async\">"},{"slug":"make-foundation","name":"Make Foundation","issuer":"Make","issued":"Sep 2025","expires":null,"credential":null,"verify":"https://www.credly.com/badges/aef65e0e-0250-42b1-b794-d2d237f1e65b/linked_in_profile","group":"ai","skills":["Zapier","n8n","Automation basics"],"logo":"assets/certs/logos/make.png","preview":"assets/certs/make-foundation.jpg","art":"<img src=\"assets/certs/make-foundation.jpg\" alt=\"Make Foundation\" loading=\"lazy\" decoding=\"async\">"},{"slug":"skills-boost-w2","name":"Skills Boost Arcade Trivia September 2025 Week 2","issuer":"Google","issued":"Sep 2025","expires":null,"credential":"18076790","verify":"https://www.cloudskillsboost.google/public_profiles/01b20a7d-63c5-4952-aa71-42b44e7084e6/badges/18076790","group":"cloud","skills":["Google Cloud","Hands-on labs"],"logo":"assets/certs/logos/google.png","preview":"assets/certs/skills-boost-w2.jpg","art":"<img src=\"assets/certs/skills-boost-w2.jpg\" alt=\"Skills Boost Arcade Trivia September 2025 Week 2\" loading=\"lazy\" decoding=\"async\">"},{"slug":"skills-boost-w1","name":"Skills Boost Arcade Trivia September 2025 Week 1","issuer":"Google","issued":"Sep 2025","expires":null,"credential":"18073756","verify":"https://www.cloudskillsboost.google/public_profiles/01b20a7d-63c5-4952-aa71-42b44e7084e6/badges/18073756","group":"cloud","skills":["Google Cloud","Hands-on labs"],"logo":"assets/certs/logos/google.png","preview":"assets/certs/skills-boost-w1.jpg","art":"<img src=\"assets/certs/skills-boost-w1.jpg\" alt=\"Skills Boost Arcade Trivia September 2025 Week 1\" loading=\"lazy\" decoding=\"async\">"},{"slug":"aws-restart-graduate","name":"AWS re/Start Graduate","issuer":"Amazon Web Services (AWS)","issued":"Nov 2024","expires":null,"credential":null,"verify":"https://www.credly.com/badges/823f2b66-afb9-443d-84d3-d6b7e169739f/linked_in_profile","group":"cloud","skills":["Amazon S3","EC2","IAM","Linux","Cloud networking"],"logo":"assets/certs/logos/aws.png","preview":"assets/certs/aws-restart-graduate.jpg","art":"<img src=\"assets/certs/aws-restart-graduate.jpg\" alt=\"AWS re/Start Graduate\" loading=\"lazy\" decoding=\"async\">"},{"slug":"aws-cloud-practitioner","name":"AWS Cloud Practitioner","issuer":"Orbit Future Academy","issued":"Sep 2024","expires":null,"credential":"OFA/2024-09/AWS/AWSREST/16340","verify":"https://erp.orbitfutureacademy.com/pub/certificate/verification/ORBITFA66fa6c2e4e02e","group":"cloud","skills":["Amazon RDS","AWS Lambda","CloudFormation","AWS CLI"],"logo":"assets/certs/logos/orbit.png","preview":"assets/certs/aws-cloud-practitioner.jpg","art":"<img src=\"assets/certs/aws-cloud-practitioner.jpg\" alt=\"AWS Cloud Practitioner\" loading=\"lazy\" decoding=\"async\">"},{"slug":"azure-doc-intelligence","name":"Develop Solutions with Azure AI Document Intelligence","issuer":"Microsoft","issued":"Feb 2025","expires":null,"credential":null,"verify":"https://learn.microsoft.com/api/achievements/share/en-us/MuhamadFikriHaikal-3687/879NSG2W?sharingId=25B381486069D495","group":"ai","skills":["Document Intelligence","Artificial Intelligence"],"logo":"assets/certs/logos/microsoft.png","preview":"assets/certs/azure-doc-intelligence.png","art":"<img src=\"assets/certs/azure-doc-intelligence.png\" alt=\"Develop Solutions with Azure AI Document Intelligence\" loading=\"lazy\" decoding=\"async\">"},{"slug":"azure-semantic-kernel","name":"Develop AI Agents using Azure OpenAI and the Semantic Kernel SDK","issuer":"Microsoft","issued":"Feb 2025","expires":null,"credential":null,"verify":"https://learn.microsoft.com/api/achievements/share/en-us/MuhamadFikriHaikal-3687/ES2479QP?sharingId=25B381486069D495","group":"ai","skills":["Azure OpenAI","Semantic Kernel","AI agents"],"logo":"assets/certs/logos/microsoft.png","preview":"assets/certs/azure-semantic-kernel.png","art":"<img src=\"assets/certs/azure-semantic-kernel.png\" alt=\"Develop AI Agents using Azure OpenAI and the Semantic Kernel SDK\" loading=\"lazy\" decoding=\"async\">"},{"slug":"azure-ai-services","name":"Get Started with Azure AI Services","issuer":"Microsoft","issued":"Feb 2025","expires":null,"credential":null,"verify":"https://learn.microsoft.com/api/achievements/share/en-us/MuhamadFikriHaikal-3687/HA9XMHQ8?sharingId=25B381486069D495","group":"ai","skills":["Azure AI Services","Cognitive Services"],"logo":"assets/certs/logos/microsoft.png","preview":"assets/certs/azure-ai-services.png","art":"<img src=\"assets/certs/azure-ai-services.png\" alt=\"Get Started with Azure AI Services\" loading=\"lazy\" decoding=\"async\">"},{"slug":"azure-cloud-concepts","name":"Microsoft Azure Cloud Concepts","issuer":"Microsoft","issued":"Feb 2025","expires":null,"credential":null,"verify":"https://learn.microsoft.com/api/achievements/share/en-us/MuhamadFikriHaikal-3687/UYLGETF3?sharingId=25B381486069D495","group":"cloud","skills":["Cloud architecture","Cloud computing"],"logo":"assets/certs/logos/microsoft.png","preview":"assets/certs/azure-cloud-concepts.png","art":"<img src=\"assets/certs/azure-cloud-concepts.png\" alt=\"Microsoft Azure Cloud Concepts\" loading=\"lazy\" decoding=\"async\">"},{"slug":"azure-ai-fundamentals","name":"Microsoft Azure AI Fundamentals","issuer":"Microsoft","issued":"Feb 2025","expires":null,"credential":null,"verify":"https://learn.microsoft.com/api/achievements/share/en-us/MuhamadFikriHaikal-3687/UYTTA7L3?sharingId=25B381486069D495","group":"ai","skills":["Microsoft Azure","Azure AI","Machine learning"],"logo":"assets/certs/logos/microsoft.png","preview":"assets/certs/azure-ai-fundamentals.png","art":"<img src=\"assets/certs/azure-ai-fundamentals.png\" alt=\"Microsoft Azure AI Fundamentals\" loading=\"lazy\" decoding=\"async\">"},{"slug":"ms-security-compliance-identity","name":"Microsoft Security, Compliance, and Identity Fundamentals","issuer":"Microsoft","issued":"Jan 2024","expires":"Jan 2028","credential":"70882_77","verify":"https://drive.google.com/file/d/1KNQ7yN_0F9rtzYAQ-LYzovx6K-11yxer/view","group":"security","skills":["Identity fundamentals","Compliance","Zero trust"],"logo":"assets/certs/logos/microsoft.png","preview":"assets/certs/ms-security-compliance-identity.jpg","art":"<img src=\"assets/certs/ms-security-compliance-identity.jpg\" alt=\"Microsoft Security, Compliance, and Identity Fundamentals\" loading=\"lazy\" decoding=\"async\">"},{"slug":"harisenin-fullstack","name":"Fullstack Web Development","issuer":"Harisenin.com","issued":"Jul 2024","expires":null,"credential":"HSBC/FSD/01/20240728052","verify":"https://drive.google.com/file/d/1zb7eL4CoIIHfSC6npPI1w8jmvCn1YtV6/view","group":"web","skills":["React.js","Node.js","Database design","JSON"],"logo":"assets/certs/logos/harisenin.png","preview":"assets/certs/harisenin-fullstack.jpg","art":"<img src=\"assets/certs/harisenin-fullstack.jpg\" alt=\"Fullstack Web Development\" loading=\"lazy\" decoding=\"async\">"},{"slug":"fcc-responsive-web","name":"Responsive Web Design","issuer":"freeCodeCamp","issued":"Mar 2024","expires":null,"credential":null,"verify":"https://www.freecodecamp.org/certification/Fikri_Haikal/responsive-web-design","group":"web","skills":["HTML5","CSS3","Flexbox","Grid","Accessibility"],"logo":"assets/certs/logos/freecodecamp.png","preview":null,"art":"<svg class=\"cert-art\" viewBox=\"0 0 320 200\" preserveAspectRatio=\"xMidYMid slice\" role=\"img\" aria-label=\"Responsive Web Design\">\n  <defs>\n    <linearGradient id=\"cw3279931240g\" gradientTransform=\"rotate(55 .5 .5)\">\n      <stop offset=\"0\" stop-color=\"#5f78ff\" stop-opacity=\".85\"/>\n      <stop offset=\"1\" stop-color=\"#5f78ff\" stop-opacity=\".22\"/>\n    </linearGradient>\n    <radialGradient id=\"cw3279931240r\" cx=\"18%\" cy=\"14%\" r=\"78%\">\n      <stop offset=\"0\" stop-color=\"#fff\" stop-opacity=\".45\"/>\n      <stop offset=\"1\" stop-color=\"#fff\" stop-opacity=\"0\"/>\n    </radialGradient>\n  </defs>\n  <rect width=\"320\" height=\"200\" fill=\"url(#cw3279931240g)\"/>\n  <rect width=\"320\" height=\"200\" fill=\"url(#cw3279931240r)\"/>\n  <g fill=\"none\" stroke=\"#fff\" stroke-opacity=\".22\" stroke-width=\"1\">\n    <circle cx=\"272\" cy=\"42\" r=\"54\"/><circle cx=\"272\" cy=\"42\" r=\"34\"/><circle cx=\"40\" cy=\"172\" r=\"46\"/>\n  </g>\n  <text x=\"24\" y=\"52\" font-family=\"Space Grotesk, Inter, sans-serif\" font-size=\"26\" font-weight=\"700\" fill=\"#fff\" fill-opacity=\".92\">FC</text>\n  <text x=\"24\" y=\"126\" font-family=\"Inter, sans-serif\" font-size=\"14\" font-weight=\"600\" fill=\"#fff\" fill-opacity=\".95\">Responsive Web Design</text>\n  <text x=\"24\" y=\"150\" font-family=\"Inter, sans-serif\" font-size=\"11\" font-weight=\"500\" fill=\"#fff\" fill-opacity=\".7\">freeCodeCamp</text>\n</svg>"},{"slug":"simplilearn-php","name":"PHP Programming","issuer":"Simplilearn","issued":"Jun 2024","expires":null,"credential":"6755604","verify":"https://drive.google.com/file/d/1as791MLbekFMp6fm5I0GPGkFCwUeefH3/view","group":"web","skills":["PHP","phpMyAdmin","MySQL"],"logo":"assets/certs/logos/simplilearn.png","preview":"assets/certs/simplilearn-php.jpg","art":"<img src=\"assets/certs/simplilearn-php.jpg\" alt=\"PHP Programming\" loading=\"lazy\" decoding=\"async\">"},{"slug":"kelas-uiux-figma","name":"Certification of UI/UX Design by Figma","issuer":"Kelas.com","issued":"Sep 2023","expires":"Sep 2027","credential":"CERT-2FCF372C","verify":"https://kelas.com/certificates/prakerja/Nzk5ODUz/NjA=","group":"web","skills":["Web design","Figma","Design systems"],"logo":"assets/certs/logos/kelas.png","preview":"assets/certs/kelas-uiux-figma.jpg","art":"<img src=\"assets/certs/kelas-uiux-figma.jpg\" alt=\"Certification of UI/UX Design by Figma\" loading=\"lazy\" decoding=\"async\">"},{"slug":"kelas-backend-node","name":"Back-End Development with JavaScript and Node.js","issuer":"Kelas.com","issued":"Sep 2023","expires":"Sep 2027","credential":"CERT-196AF385","verify":"https://kelas.com/certificates/prakerja/Nzk5ODUz/NzE=","group":"web","skills":["Node.js","Express.js","REST API","Database design"],"logo":"assets/certs/logos/kelas.png","preview":"assets/certs/kelas-backend-node.jpg","art":"<img src=\"assets/certs/kelas-backend-node.jpg\" alt=\"Back-End Development with JavaScript and Node.js\" loading=\"lazy\" decoding=\"async\">"},{"slug":"habiskerja-wordpress","name":"WordPress Developer Certificate","issuer":"Habiskerja.com","issued":"Feb 2024","expires":"Feb 2027","credential":"010024/HK/22","verify":"https://drive.google.com/file/d/1iA58uFVr4g1aP_w3orpW3Xr9wqwXWMQF/view","group":"web","skills":["WordPress","Learning Management Systems","Hosting"],"logo":"assets/certs/logos/habiskerja.png","preview":"assets/certs/habiskerja-wordpress.jpg","art":"<img src=\"assets/certs/habiskerja-wordpress.jpg\" alt=\"WordPress Developer Certificate\" loading=\"lazy\" decoding=\"async\">"},{"slug":"cyber-academy-infosec","name":"Introduction to Information Security","issuer":"Cyber Academy Indonesia","issued":"Jan 2024","expires":"Jan 2028","credential":"PKMI01101240118","verify":"https://drive.google.com/file/d/12FCWrWySuUtxDJ_jX-uy8lcJk9uO4O1_/view","group":"security","skills":["CIA triad","Threat modelling","Database design"],"logo":"assets/certs/logos/cyber.png","preview":"assets/certs/cyber-academy-infosec.jpg","art":"<img src=\"assets/certs/cyber-academy-infosec.jpg\" alt=\"Introduction to Information Security\" loading=\"lazy\" decoding=\"async\">"},{"slug":"cambridge-advanced","name":"Cambridge English Advanced (CAE)","issuer":"Cambridge English","issued":"Jan 2024","expires":"Jan 2035","credential":"MY959_MSTFIKRI_HAIKAL","verify":null,"group":"language","skills":["English C1","Professional writing"],"logo":"assets/certs/logos/cambridge.png","preview":"assets/certs/cambridge-advanced.jpg","art":"<img src=\"assets/certs/cambridge-advanced.jpg\" alt=\"Cambridge English Advanced (CAE)\" loading=\"lazy\" decoding=\"async\">"},{"slug":"toafl-arabic","name":"Test of Arabic as a Foreign Language (TOAFL)","issuer":"Lisanul Arab","issued":"Aug 2022","expires":"Aug 2024","credential":"K5669305","verify":"https://drive.google.com/file/d/1i_TLAdhR3k1q5B8OmBp-Bir89ENlBZwO/view","group":"language","skills":["Arabic","Arabic language skill"],"logo":null,"preview":"assets/certs/toafl-arabic.jpg","art":"<img src=\"assets/certs/toafl-arabic.jpg\" alt=\"Test of Arabic as a Foreign Language (TOAFL)\" loading=\"lazy\" decoding=\"async\">"}]  };
+</script>
+<script src="assets/js/scroll.js?v=20260911h"></script>
+<script src="assets/js/main.js?v=20260911h"></script>
+</body>
 </html>
